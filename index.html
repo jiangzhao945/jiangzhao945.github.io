@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的作品集</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/1.png" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div class="parent">
+        <ul id="ul">
+
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var ul=document.getElementById("ul");
+        var str='';
+        var data=[
+            [
+                {title:'第一章 常用的图片轮播及切换'},
+                {url:'./ex1/swipe.html',title:'轮播图'},
+            ],
+            [
+                {title:'第二章 常用的图片效果'},
+                {url:'./ex2/fdj.html',title:'图片放大镜效果'},
+                {url:'./ex2/changeimg.html',title:'鼠标移入改变图片路径'},
+            ],
+            [
+                {title:'第三章 展示数据效果'},
+                {url:'./ex3/xlcd.html',title:'下拉菜单（地址）'},
+                {url:'./ex3/UCFilter.html',title:'筛选菜单'},
+                {url:'./ex3/index1.html',title:'倒计时界面'},
+                {url:'./ex3/index2.html',title:'商品界面'}
+            ],
+            [
+                {title:'第四章 表单常用代码'},
+            ],
+            [
+                {title:'第五章 时间日期效果'},
+								{url:'./ex5/clock.html',title:'时钟倒计时'}
+            ]
+        ]
+        for(var i=0;i<data.length;i++){
+            var items=data[i];
+            var inner='';
+            for(var j=0;j<items.length;j++){
+                var son=items[j];
+                if(j==0){
+                    str+='<li><h1><a href="javascript:;">'+son.title+'</a></h1><div class="d-none list">';
+                }else{
+                    str+='<div><a class="listA" href="'+son.url+ '" target="_blank">'+son.title+'</a></div>';
+                }if(j==items.length-1){
+                    str+='</div></li>';
+                }
+            }
+            inner+=str;
+        }
+        ul.innerHTML=inner;   
+        var bool=false;
+        var tmp = -1;
+        var li=document.querySelectorAll("#ul>li");
+        for(var i=0;i<li.length;i++){
+            li[i].index = i;
+            li[i].onclick=function(){
+                for(var i=0; i<li.length; i++){
+                    li[i].childNodes[1].style.display = 'none';
+                }
+                if(this.index==tmp && bool){
+                    this.childNodes[1].style.display='none';
+                    bool=false;
+                }else{
+                    this.childNodes[1].style.display='block';
+                    bool=true;
+                }
+                tmp=this.index;
+            }
+        }
+
+    </script>
+</body>
+</html>

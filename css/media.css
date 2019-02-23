@@ -1,0 +1,12 @@
+@media screen and (min-width:768px) and (max-width:991px){
+    .parent{width: 100%;margin-top: 0px;border: 0px;border-radius: 0px;box-shadow: none;}
+}
+@media screen and (max-width:375px){
+    .parent{width: 100%;margin-top: 0px;border: 0px;border-radius: 0px;box-shadow: none;}
+}
+@media screen and (max-width:414px) and (min-width:376px){
+    li>h1>a{width: 100%;border-radius: 0px;}
+    li>h1{font-size: 16px;}
+    .listA{font-size: 12px;}
+    .parent{max-width:100%;padding:0px;overflow:hidden;width:414px;margin: 0px;border: 0px;border-radius: 0px;box-shadow: none;}
+}
