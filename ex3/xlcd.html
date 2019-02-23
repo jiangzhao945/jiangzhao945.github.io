@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉菜单</title>
+    <style>
+        #cityParent,#areaParent{display: none;}
+        #provinceParent{display: inline-block;}
+    </style>
+</head>
+<body>
+    <form action="">
+        <div id="provinceParent">
+            <span>省份:</span>
+            <select name="" id="province" onchange="onchange1()">
+
+            </select>
+        </div>
+        <div id="cityParent">
+            <span>市区:</span> 
+            <select name="" id="city" onchange="onchange2()">
+            </select>
+        </div>
+        <div id="areaParent">
+            <span>市区:</span> 
+            <select name="" id="area" >
+                <option value="0">--请选择地址--</option>
+                <option value="1">雨花区</option>
+            </select>
+        </div>
+    </form>
+
+    <script>
+        var province=document.getElementById("province");
+        var city=document.getElementById("city");
+        var area=document.getElementById("area");
+
+
+        var provinceParent=document.getElementById("provinceParent");
+        var cityParent=document.getElementById("cityParent");
+        var areaParent=document.getElementById("areaParent");
+
+        var provinceData=['湖南','广东'];
+        var cityData=[['长沙','益阳'],['广州','深圳']];
+        var areaData=[[['雨花区','岳麓区'],['赫山区','资阳区']],[['天河区','越秀区'],['宝安区','光明新区']]];
+
+        var str='';
+        var strs='';
+        for(var i=0;i<provinceData.length;i++){
+            var str = `<option value="${i+1}">${provinceData[i]}</option>`;
+            strs+=str;
+            console.log(strs)
+            province.innerHTML="<option value='0'>--请选择您的地址--</option>"+strs;
+        }
+        var str2='';
+        var strs2='';
+        function onchange1(){
+            str2='';
+            strs2='';
+            if(province.value==0){
+                cityParent.style.display='none';
+            }else if(province.value==1){
+                cityParent.style.display='inline-block';
+                for(var i=0;i<cityData[province.value-1].length;i++){
+                    console.log(cityData[0][i])
+                    str2=`<option value="${i+1}">${cityData[0][i]}</option>`;
+                    strs2+=str2;
+                    city.innerHTML="<option value='0'>--请选择您的地址--</option>"+strs2;
+                    // for(var j=0;j<cityData[])
+                }
+            }
+        }
+        function onchange2(){
+            if(city.value==0){
+                areaParent.style.display='none';
+            }else if(city.value==1){
+                areaParent.style.display='inline-block';
+            }
+        }
+    </script>
+</body>
+</html>

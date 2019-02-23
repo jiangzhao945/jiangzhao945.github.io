@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index1.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-back">
+                <img src="../img/left1.png" alt="">
+            </div>
+            <div class="header-title">
+                <p>幸运购</p>
+            </div>
+            <div class="header-home">
+                <img src="../img/home.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="body-parent">
+        <ul>
+            <li class="content-li">
+                <img src="../img/y1.png" alt="">
+                <div class="rightContent">
+                    <p style="margin-bottom: 10px;">中国黄金20克财富金条<br>20克财富金条</p>
+                    <span class="rightContent-span">价值：￥10000.00</span><br>
+                    <span class="rightContent-span">期号：100020001</span>
+                    <a class="rightContent-a" href="javascript:;">即将揭晓</a>
+                </div>
+            </li>
+            <li class="content-li">
+                <div class="content2-left">
+                    <span class="content2-left-span">总需人次 : 12334</span>
+                </div>
+                <div class="boxParent">
+                    <div class="box1">
+                        <div class="box2">
+                            <h1>揭晓倒计时</h1>
+                            <div class="hr"></div>
+                            <div class="clockBox">
+                                <span id="d">00</span><span>:</span>
+                                <span id="h">00</span><span>:</span>
+                                <span id="m">00</span><span>:</span>
+                                <span id="s">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2-right">
+                    <a href="javascript:;">计算详情</a>
+                </div>
+            </li>
+            <li class="content-other">
+                <div>
+                    <img src="../img/123.png" alt=""><p>商品详情</p>
+                </div>
+                <div>
+                    <img src="../img/2.png" alt=""><p>往期幸运购记录</p>
+                </div>
+                <div>
+                    <img src="../img/12.png" alt=""><p>本期参与情况</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function countTime(){
+            //获得当前时间
+            var date=new Date();
+            var now=date.getTime();
+
+            //设置截止时间
+            var str='2019/2/26 00:00:00';
+            var endDate=new Date(str);
+            var end=endDate.getTime();
+
+            //时间差
+            var time=end-now;
+            var d,h,m,s;
+            if(time>=0){
+                d = Math.floor(time/1000/60/60/24);  
+                h = Math.floor(time/1000/60/60%24);  
+                m = Math.floor(time/1000/60%60);  
+                s = Math.floor(time/1000%60); 
+            }
+            var dd=document.getElementById("d");
+            var hh=document.getElementById("h");  
+            var mm=document.getElementById("m");  
+            var ss=document.getElementById("s"); 
+            if(d<10&&d>0){
+                dd.innerHTML='0'+d
+            }else if(d==0){
+                dd.innerHTML='00';
+            }
+            else{dd.innerHTML= d;}
+
+            if(h<10&&h>0){
+                hh.innerHTML = '0'+h;
+            }else if(h==0){
+                hh.innerHTML='00';
+            }
+            else{hh.innerHTML=h;}
+
+            if(m<10&&m>0){
+                mm.innerHTML ='0'+m;
+            }else if(m==0){
+                mm.innerHTML='00';
+            }
+            else{mm.innerHTML=m;}
+
+            if(s<10&&s>0){
+                ss.innerHTML ='0'+s;
+            }else{ss.innerHTML=s}
+        } 
+        setInterval(countTime,1000)
+    </script>
+</body>
+</html>

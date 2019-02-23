@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{padding: 0px;margin: 0px;}
+        a{text-decoration: none;}
+        
+        
+        footer{width: 100%;background: #fff;height: 46px;position: fixed;top: 94%;border-top: 1px solid rgb(177, 172, 172);}
+        .footer{display: flex;justify-content: space-around;margin-top: 2px;}
+        .footer>div>a>img{width: 23px;height: 23px;}
+        .footer>div{text-align: center;}
+        .icon-title{font-size: 8px;color: #000;}
+        
+        
+        header{width: 100%;height: 50px;background: #ccc;position: relative;}
+        #header-search{position: absolute;left: 5%;top: 11%;width: 90%;height: 75%;background: #fff;border-radius:3px; }
+        #search-left{padding: 3px;display: inline-block;width: 20%;text-align: center}
+        #search-left>span{color: rgb(107, 106, 106);cursor: pointer;border-right: 1px solid rgb(87, 84, 84);;display: inline-block;width: 85px;height: 30px;text-align: center;line-height: 30px;}
+        
+        #search-input{position: relative;display: inline-block;margin-left: 10px;width: 72%;}
+        .search-icon{position: absolute;left: 0;z-index: 5;width: 30px;}
+        .search{width: 85%;height: 30px;border: none;padding-left: 30px;}
+        /* *****************************************************/
+        .content{width: 100%;height: 86.5vh;position: relative;overflow: hidden;}
+        .button{position: absolute;left: 50%;top: 50%;}
+        .button>button{width: 100px;height: 30px;margin-left: -50px;margin-top: -15px;}
+        /* margin-left: 80%; ;left: 30%*/
+        .showContent0{z-index: 10;position: absolute;left: 0px;top: 0px; transition-duration: 0.5s; width: 100%;overflow: hidden;margin-left: 80%; height: 100%;background: #fff;position: absolute;left: 30%;overflow: hidden;}
+        .showContent1{z-index: 10;position: absolute;left: 0px;top: 0px; transition-duration: 0.5s; width: 70%;overflow: auto;height: 100%;background: #fff;position: absolute;left: 30%;}
+        .zzc{width: 43%;height: 100%;position: fixed;left: -13%;display: none;background: rgb(158, 158, 158);opacity: 0.6;}
+        
+
+        .title{background: rgb(243, 241, 241);height: 40px;}
+        .title>p{line-height: 40px;padding-left: 20px;color: rgb(140, 142, 143);}
+
+        .inputStyle{width: 80px;height: 30px;border-radius: 4px;border-width: 1px;padding-left: 10px;}
+        .showContent-kz{border-bottom: 1px solid rgb(235, 228, 228);padding: 20px;}
+        .showContent-kz>p{margin-bottom: 10px;font-weight: bold;font-size: 15px;}
+
+        a{text-decoration: none;}
+        .bold{font-weight: bold;padding-bottom: 10px;}
+        ul{list-style:none;}
+        .d-iBlcok{display: inline-block}
+        .float-right{float: right;}
+        .d-none{display: none;}
+
+        .typeUl>li>a{border: 0.5px solid #fff; color: rgb(143, 139, 139); font-size: 15px; width: 40px;text-align: center; border-radius: 3px; text-decoration: none;display: inline-block;padding: 5px;margin-right: 20px;}
+        .showBorder{border: 0.5px solid rgb(240, 197, 117) !important;color: rgb(240, 197, 117) !important;}
+
+        .typeUl{border-bottom: 1px solid #ccc;padding-bottom: 20px;}
+        .typeParent{padding: 20px;}
+        .typeUl>li{display: inline-block;}
+
+
+        .themeParent,.otherParent,.buttonParent{padding:0 20px 30px 20px;}
+
+        .reset,.finish{width: 90px;height: 35px;border-radius: 3px;font-size: 18px}
+        .reset{background: #fff;border: 1px solid #ccc;}
+        .finish{color: #fff; background: rgb(233, 200, 110);border: 1px solid rgb(233, 200, 110);margin-left: 7%;}
+    
+
+        .kzFiltrate{cursor:pointer ;padding:10px 20px 10px 20px;background: #fff;border-bottom: 1px solid #ccc;}
+        .pitchOn{color: rgb(238, 212, 96);}
+        .topContent{width: 100%;height: 100vh;position: relative;}
+        
+        .showKZ1{z-index: 10;position:absolute ;width: 100%;height: 30%;background: #fff;overflow: hidden;transition-duration: 0.5s;}
+        .showKZ0{z-index: 0;position:absolute ;width: 100%;height: 0%;background: #fff;top: 6%;overflow: hidden;transition-duration: 0.5s;}
+        .zzc2{position: fixed;background: rgb(158, 158, 158);opacity: 0.6;display: none;width: 100%;height: 70vh;top: 43%;}
+
+        .KZcontent{padding:10px 20px 10px 20px;}
+        .KZ-li{padding: 5px;cursor:pointer;margin-bottom: 5px;}
+        .KZ-li>a{color: rgb(129, 124, 124);font-size: 13px;}
+        /* *****************************************************/
+        
+
+        .topContent2{border-bottom: 1px solid #ccc;width: 100%;height: 40px;display: flex;justify-content: space-around;}
+        .topContent2>div{line-height: 40px;}
+        .black{color: black;}
+        
+        .commodity{width: 100%;height: 74vh;overflow: scroll;position: fixed;top: 20%;}
+        .commodity>ul{display: flex;overflow: auto;flex-wrap:wrap;justify-content: space-around;}
+        .commodity>ul>li{display: inline-block;padding: 10px 0 10px 0px;}
+        .commodity-img{width: 155px;}
+        .buyButton{display: block;color: #fff;text-align: center;height: 40px;line-height: 40px;background: rgb(233, 200, 110);}
+
+        .p-t-m-5{padding: 8px 0 8px 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-search">
+            <div id="search-left">
+                <span>全部 </span>
+            </div>
+            <div id="search-input">
+                <img src="../img/searchIcon.png" class="search-icon" alt="">
+                <input type="text" class="search" placeholder="请输入关键字">
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <!-- <div class="button">
+            <button>筛选</button><br>
+        </div> -->
+        <div class="topContent">
+            <div class="kzFiltrate">
+                <p class="d-iBlcok" style='color: rgb(122, 117, 117);'>克重筛选</p>
+                <div class="d-iBlcok float-right">
+                    <span class="pitchOn">5g~10g</span>
+                </div>
+            </div>
+            <div class="showKZ0">
+                <ul class="KZcontent">
+                    <li class="KZ-li"><a href="javascript:;">全部</a><span class="float-right d-none">√</span></li>
+                    <li class="KZ-li"><a href="javascript:;">1g~5g</a><span class="float-right d-none">√</span></li>
+                    <li class="KZ-li"><a href="javascript:;">6g~10g</a><span class="float-right d-none">√</span></li>
+                    <li class="KZ-li"><a href="javascript:;">11g~50g</a><span class="float-right d-none">√</span></li>
+                    <li class="KZ-li"><a href="javascript:;">51g~100g</a><span class="float-right d-none">√</span></li>
+                    <li class="KZ-li"><a href="javascript:;">100g以上</a><span class="float-right d-none">√</span></li>
+                </ul>
+                <div class="zzc2">
+
+                </div>
+            </div>
+            <div class="topContent2">
+                <div><a href="javascript:;" class="black">全部</a></div>
+                <div><a href="javascript:;" style="color:rgb(240, 197, 117)">结婚</a></div>
+                <div><a href="javascript:;" class="black">情侣</a></div>
+                <div><a href="javascript:;" class="black">父母</a></div>
+                <div><a href="javascript:;" id="shaixuan" class="black">筛选</a></div>
+            </div>
+            <div class="commodity">
+                <ul>
+                    <li>
+                        <img class="commodity-img" src="../img/22.png" alt="">
+                        <p>金条送礼佳品 3g <br>16X27mm </p>
+                        <p class="p-t-m-5">￥ 5000.00</p>
+                        <a href="javascript:;" class="buyButton">立即购买</a>
+                    </li>
+                    <li>
+                        <img class="commodity-img" src="../img/22.png" alt="">
+                        <p>金条送礼佳品 3g <br>16X27mm </p>
+                        <p class="p-t-m-5">￥ 5000.00</p>
+                        <a href="javascript:;" class="buyButton">立即购买</a>
+                    </li>
+                    <li>
+                        <img class="commodity-img" src="../img/22.png" alt="">
+                        <p>金条送礼佳品 3g <br>16X27mm </p>
+                        <p class="p-t-m-5">￥ 5000.00</p>
+                        <a href="javascript:;" class="buyButton">立即购买</a>
+                    </li>
+                    <li>
+                        <img class="commodity-img" src="../img/22.png" alt="">
+                        <p>金条送礼佳品 3g <br>16X27mm </p>
+                        <p class="p-t-m-5">￥ 5000.00</p>
+                        <a href="javascript:;" class="buyButton">立即购买</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="showContent0">
+            <div class="zzc">
+
+            </div>
+            <div class="contentC">
+                <div>
+                    <div class="title">
+                        <p>筛选</p>
+                    </div>
+                    <div class="showContent-kz">
+                        <p>克重区间</p>
+                        <input class="inputStyle" type="text" name='minG' placeholder="最低克重">
+                        <span>-</span>
+                        <input class="inputStyle" type="text" name="maxG" placeholder="最高克重">
+                    </div>
+                </div>
+                <div class="typeParent">
+                    <p class="bold">类型<span style="margin-left:65%;">v</span></p>
+                    <ul class="typeUl">
+                        <li><a href="javascript:;" class="showBorder">金条</a></li>
+                        <li><a href="javascript:;">金章</a></li>
+                        <li><a href="javascript:;">吊坠</a></li>
+                        <li><a href="javascript:;">邮票</a></li>
+                    </ul>
+                </div>
+                <div class="themeParent">
+                    <p class="bold">主题<span style="margin-left:65%;">v</span></p>
+                    <ul class="typeUl">
+                        <li><a href="javascript:;" class="showBorder">姓氏</a></li>
+                        <li><a href="javascript:;">生肖</a></li>
+                        <li><a href="javascript:;">佛</a></li>
+                        <li><a href="javascript:;">文字</a></li>
+                        <li><a href="javascript:;">卡通</a></li>
+                        <li><a href="javascript:;">龙凤</a></li>
+                    </ul>
+                </div>
+                <div class="otherParent">
+                    <p class="bold">适用<span style="margin-left:65%;">v</span></p>
+                    <ul class="typeUl">
+                        <li><a href="javascript:;" class="showBorder">女</a></li>
+                        <li><a href="javascript:;">男</a></li>
+                        <li><a href="javascript:;">情侣</a></li>
+                        <li><a href="javascript:;">儿童</a></li>
+                        <li><a href="javascript:;">父母</a></li>
+                    </ul>
+                </div>
+                <div class="buttonParent">
+                    <button class="reset">重置</button>
+                    <button class="finish">完成</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer">
+            <div><a href="javascript:;"><img src="../img/home1.png" alt=""><p class="icon-title">首页</p></a></div>
+            <div><a href="javascript:;"><img src="../img/yy.png" alt=""><p class="icon-title">商品</p></a></div>
+            <div><a href="javascript:;"><img src="../img/shop.png" alt=""><p class="icon-title">购物车</p></a></div>
+            <div><a href="javascript:;"><img src="../img/me.png" alt=""><p class="icon-title">我的</p></a></div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        (function(){
+            var type=document.querySelectorAll(".typeParent>ul>li>a");
+            var theme=document.querySelectorAll(".themeParent>ul>li>a");
+            var other=document.querySelectorAll(".otherParent>ul>li>a");
+            var resetButton=document.querySelectorAll(".reset")[0];
+            var button=document.querySelectorAll("#shaixuan")[0];
+            var content=document.querySelectorAll(".showContent0")[0];
+            var contentParent=document.querySelectorAll(".content")[0];
+            var finishButton=document.querySelectorAll(".finish")[0];
+            var li=document.querySelectorAll(".KZ-li");
+            var span=document.querySelectorAll(".KZ-li>span");
+            var a=document.querySelectorAll(".KZ-li>a");
+            var p=document.querySelectorAll(".kzFiltrate")[0];
+            var showKZ=document.getElementsByClassName("showKZ0")[0];
+            var pitchOn=document.getElementsByClassName("pitchOn")[0];
+            var zzc2=document.getElementsByClassName("zzc2")[0];
+            var zzc=document.getElementsByClassName("zzc")[0];
+            //选项事件
+            function change(name){
+                for(var i=0;i<name.length;i++){
+                    name[i].onclick=function(){
+                        for(types of name){
+                            types.classList.remove('showBorder');
+                        }
+                        this.classList.add('showBorder');
+                    }
+                }
+            }
+            //给每个区域的选择项绑定事件
+            change(type);
+            change(theme);
+            change(other);
+            
+            //清除指定区域选择
+            function reset(name){
+                for(types of name){
+                    types.classList.remove('showBorder');
+                }
+                name[0].classList.add('showBorder');
+            }
+
+            //清除所有的选择
+            function resetAll(){
+                reset(type);
+                reset(theme);
+                reset(other);
+            };
+
+            resetButton.onclick=function(){
+                resetAll();
+            }
+            
+            finishButton.onclick=function(){
+                content.className='showContent0';
+                    zzc.style.display='none';
+            }
+            //绑定筛选按钮事件
+            contentParent.onclick=function(e){
+                if(e.target.innerHTML=='筛选'){
+                    content.className='showContent1';
+                    showKZ.className='showKZ0';
+                    setTimeout(function(){
+                        zzc.style.display='block';
+                    },500)
+
+                }else if(e.target.className=='zzc'){
+                    content.className='showContent0 ';
+                    zzc.style.display='none';
+                }
+                 else if(e.target.className=='zzc2'){
+                     showKZ.className='showKZ0';
+                    zzc2.style.display='none';
+
+                 }
+            }
+
+            // ****************************************下拉筛选***********************
+            
+
+            p.onclick=function(){
+                showKZ.className='showKZ1';
+                setTimeout(function(){
+                    zzc2.style.display='block';
+                },500)
+            }
+
+            for(var i=0;i<li.length;i++){
+                li[i].onclick=function(){
+                    for(as of a){
+                        as.style.color='rgb(129, 124, 124)';
+                    }
+                    for(spans of span){
+                        spans.style.display='none';
+                    }
+                    this.firstChild.style.color='rgb(233, 200, 110)';
+                    this.lastChild.style.display='inline-block';
+                    this.lastChild.style.color='rgb(233, 200, 110)';
+                    zzc2.style.display='none';
+                    
+                    showKZ.className='showKZ0';
+                    pitchOn.innerHTML=this.firstChild.innerHTML;
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
