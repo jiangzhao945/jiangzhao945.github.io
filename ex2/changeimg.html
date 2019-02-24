@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标移过，改变图片路径</title>
+    <style>
+        *{padding: 0px;margin: 0px;}
+        ul{list-style: none;margin: 0 auto;width: 400px;height: 500px;overflow: hidden;}
+        .first{width: 400px;height: 400px;}
+        .first img{width: 100%;height: 100%;}
+
+        #box>li>a>img{width: 94px;height: 89px;}
+        #box li{display: inline-block;border: 1px solid #ccc;}
+    </style>
+</head>
+<body>
+    <ul id="box">
+        <li class="first"><img src="../img/s.jpg" alt=""></li>
+        <li><a href="javascript:;"><img src="../img/s.jpg" alt=""></a></li>
+        <li><a href="javascript:;"><img src="../img/a.jpg" alt=""></a></li>
+        <li><a href="javascript:;"><img src="../img/c.jpg" alt=""></a></li>
+        <li><a href="javascript:;"><img src="../img/j.jpg" alt=""></a></li>
+    </ul>
+
+    <script>
+        var first=document.querySelectorAll(".first>img")[0];
+        var small=document.querySelectorAll("#box>li>a>img");
+
+        for(smalls of small){
+            smalls.onmouseover=function(){
+                first.src=this.src;
+            }
+        }
+    </script>
+</body>
+</html>

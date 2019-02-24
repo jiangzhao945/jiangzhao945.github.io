@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片放大镜</title>
+    <style>
+        *{padding: 0px;margin: 0px;}
+        .parent{margin: 0 auto;width: 200px;height: 200px;position: relative;}
+        .small{width: 200px;height: 200px;}
+        .small img{width: 100%;height: 100%;}
+        .big1{position: absolute;width: 300px;height: 300px;overflow: hidden;}
+        .big2{width: 800px;height: 800px;margin-left: 0px;margin-top: 0px;display: none;}
+
+
+        .block{width: 50px;height: 50px;background: rgb(212, 210, 210,0.3);position: absolute;top: 0px;left: 0px;z-index: 2;display: none;}
+        .big-block{width: 100%;height: 100%;opacity: 0;position: absolute;z-index: 3;}
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="small">
+            <div class="block"></div>
+            <div class="big-block"></div>
+            <img src="../img/s.jpg" alt="">
+        </div>
+        <div class="big1">
+            <img class="big2" src="../img/s.jpg" alt="">
+        </div>
+    </div>
+    <script type="text/javascript">
+        var small=document.querySelectorAll(".big-block")[0];
+        var block=document.querySelectorAll(".block")[0];
+        var parent=document.querySelectorAll(".parent")[0];
+        var big=document.querySelectorAll(".big2")[0];
+        var big2=document.querySelectorAll(".big1")[0];
+
+        var offsetLeft=0,offsetTop=0,left=0,top=0;
+        offsetLeft=parent.offsetLeft;
+        offsetTop=parent.offsetTop;
+
+         small.onmousemove = function(e){
+            e = e || event;
+            big.style.display=block.style.display='block';
+            var left=e.clientX-offsetLeft-block.clientHeight/2;
+            var top=e.clientY-offsetTop-block.clientWidth/2;
+            
+
+            if(top<0){
+                top=0;
+            }else if(top>parent.clientHeight-block.clientHeight){
+                top=parent.clientHeight-block.clientHeight;
+            }
+            
+            if(left < 0){
+                left = 0;
+            } else if(left > parent.clientWidth - block.clientWidth){
+                left = parent.clientWidth - block.clientWidth;
+            }
+
+            block.style.top=top+'px';
+            block.style.left=left+'px';
+
+            var scaleX = left / (parent.clientHeight - block.clientHeight);
+            var scaleY = top / (parent.clientWidth - block.clientWidth);
+
+            big.style.marginLeft=-scaleX * (big.clientWidth - big2.clientWidth) + 'px';
+            big.style.marginTop=-scaleY * (big.clientHeight - big2.clientHeight) + 'px';
+         }
+         small.onmouseout=function(){
+           big.style.display=block.style.display='none';
+         }
+    </script>
+</body>
+</html>
