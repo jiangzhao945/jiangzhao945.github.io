@@ -9,16 +9,16 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" style="width:80px;border-color:#f00" v-model="h1">
-        <select style="width:50px;border-color:#f00" v-model="opt">
+        <input type="text"  v-model="h1">
+        <select v-model="opt">
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
         </select>
-        <input type="text" style="width:80px;border-color:#f00" v-model="h2">
-        <input type="button" style="width:30px;border-color:#f00" value="=" @click="calc">
-        <input type="text" style="width:80px;border-color:#f00" v-model="result">
+        <input type="text"  v-model="h2">
+        <input type="button"  value="=" @click="calc">
+        <input type="text"  v-model="result">
     </div>
     <script>
         var vm=new Vue({
