@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" style="width:80px;border-color:#f00" v-model="h1">
+        <select style="width:50px;border-color:#f00" v-model="opt">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" style="width:80px;border-color:#f00" v-model="h2">
+        <input type="button" style="width:30px;border-color:#f00" value="=" @click="calc">
+        <input type="text" style="width:80px;border-color:#f00" v-model="result">
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                h1:0,
+                h2:0,
+                result:0,
+                opt:"+"
+            },
+            methods:{
+                calc(){
+                    switch(this.opt){
+                        case '+':
+                        this.result = parseInt(this.h1) + parseInt(this.h2)
+                        break;
+                        case '-':
+                        this.result = parseInt(this.h1) - parseInt(this.h2)
+                        break;
+                        case '*':
+                        this.result = parseInt(this.h1) * parseInt(this.h2)
+                        break;
+                        case '/':
+                        this.result = parseInt(this.h1) / parseInt(this.h2)
+                        break;
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
