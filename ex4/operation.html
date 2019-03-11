@@ -64,8 +64,11 @@
             var y = dt.getFullYear()
             var m = dt.getMonth()+1
             var d = dt.getDate()
+            var h = dt.getHours()
+            var m = dt.getMinutes()
+            var s = dt.getSeconds()
 
-            return `${y}-${m}-${d}`
+            return `${y}-${m}-${d} ${h}:${m}:${s}`
         })
         
         var vm = new Vue({
