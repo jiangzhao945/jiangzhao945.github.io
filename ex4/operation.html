@@ -64,9 +64,9 @@
             var y = dt.getFullYear()
             var m = dt.getMonth()+1
             var d = dt.getDate()
-            var h = dt.getHours()
-            var m = dt.getMinutes()
-            var s = dt.getSeconds()
+            var h = dt.getHours().toString().padStart(2,'0')
+            var m = dt.getMinutes().toString().padStart(2,'0')
+            var s = dt.getSeconds().toString().padStart(2,'0')
 
             return `${y}-${m}-${d} ${h}:${m}:${s}`
         })
