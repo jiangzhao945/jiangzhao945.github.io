@@ -63,12 +63,13 @@
             var dt = new Date(dataStr)
             var y = dt.getFullYear()
             var m = dt.getMonth()+1
+            var M = m.toString().padStart(2,'0')
             var d = dt.getDate()
             var h = dt.getHours().toString().padStart(2,'0')
-            var m = dt.getMinutes().toString().padStart(2,'0')
+            var mm = dt.getMinutes().toString().padStart(2,'0')
             var s = dt.getSeconds().toString().padStart(2,'0')
 
-            return `${y}-${m}-${d} ${h}:${m}:${s}`
+            return `${y}-${M}-${d} ${h}:${mm}:${s}`
         })
         
         var vm = new Vue({
