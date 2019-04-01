@@ -335,17 +335,17 @@
 }
 /* 兼容placeholder */
 ::-webkit-input-placeholder {
-	color: grey;
+	color: red;
 	font-size:10px;
 }
 	:-moz-placeholder {/* Firefox 18- */
-	color: grey;
+	color: red;
 }
 	::-moz-placeholder{/* Firefox 19+ */
-	color: grey;
+	color: red;
 }
 	:-ms-input-placeholder {
-	color: grey;
+	color: red;
 }
 
 
