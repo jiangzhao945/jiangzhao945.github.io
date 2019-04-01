@@ -1,0 +1,669 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>众信教育</title>
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body{background:#fff; font-family:"微软雅黑";}
+			.fl{float:left;}
+			.fr{float: right;}
+			img{width:100%; height:auto;}
+			.title img{width:70%;}
+			.clear{display:block;height:1px; clear: both;width:100%;}
+			.grey-bg{background-image: url('images/图层615.png')}
+			.m-right{margin-right:20px;}
+			.adp-img{position:relative;}
+			.adp-img .a1{position:absolute;left:0%; bottom:0; height:50px; width:30%;}
+			.adp-img .a2{position:absolute;left:33%; bottom:0; height:50px; width:30%;}
+			.adp-img .a3{position:absolute;left:68%; bottom:0; height:50px; width:30%;}
+			
+			.zx-top{width:100%; padding:10px;box-sizing:border-box;margin-top:10px; }
+			.zx-top .logo{width:20%;display: inline-block;}
+			.zx-top .tel{width:70%; padding-top:2%;}
+			.zx-header{width:100%;background:#4b9cf8;}
+			.zx-header .center{text-align: center;}
+			.zx-header .center span{color:#fff;}
+			.zx-header .li{display: inline-block;height:40px; line-height:40px;color:#fff;margin:0 5px;padding: 0 6px;position: relative;}
+			.zx-header .li:hover{background: #4080CA;}
+			.zx-header .li.curr{background: #4080CA; height:38px; border-bottom:2px solid #043670;}
+			.zx-banner{position:relative;}
+			.zx-banner .btn{display:block;position: absolute; bottom:5%; left:50%; margin-left:-85px;}
+			.zx-banner .btn img{width:80%;}
+			
+			.zx-info,.zx-video{width:100%; height:auto; margin:0 auto;}
+			.zx-info .box{width:285px; height:auto;color:#fff; font-size:22px;}
+			.zx-info .box .tit{width:100%; background:#4B9CF8; height:83px; text-align:center;padding:10px 0;border-radius:10px;}
+			.zx-info .box .tit .icon{width:47px;height:47px; line-height:47px; display:inline-block;}
+			.zx-info .box .tit .head{line-height:30px;}
+			.zx-info .box .con{width:100%; background:#4B9CF8; margin-top:10px; padding:30px; box-sizing: border-box;border-radius:10px;}
+			.zx-info .box .con .list{line-height:50px;height:50px;width:100%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+			.zx-info .box .con .btn{width:100%;height:50px; line-height:50px;-moz-box-shadow: 2px 2px 5px #333; 
+box-shadow: 2px 2px 5px #333; text-align: center; border-radius:10px; display:block;}
+			.zx-info .box .con .btn1{ background:#2449F0; color:#fff;}
+			.zx-info .box .con .btn2{ background:#fff; color:#4B9CF8;}
+			
+			.zx-video{padding:20px 0;}
+			.zx-video .con{width:100%; height:auto; padding:10px; box-sizing:border-box;}
+			.zx-video .con .tit{color:#4B9CF8;display: inline-block; font-size:16px; margin-bottom:20px; font-weight:bold; height:30px; line-height:30px; border-bottom:2px solid #666;}
+			.zx-video .con .list{line-height:30px;color:#e6e6e6; font-size:14px;}
+			.zx-video .video{width:100%; height:auto;}
+			
+			.zx-ad,.zx-teacher{width:100%; height:auto; text-align:center;}
+			.zx-ad .title,.zx-teacher .title,.zx-video .title{margin:50px 0 10px 0}
+			
+			.zx-ad{width:100%; height:auto; text-align:center;}
+			.zx-ad .title{margin:20px 10px 10px 10px;}
+			.zx-ad .ad-img{padding:20px 10px 30px 10px;}
+			.zx-ad .more-btn{padding:10px 0;  display:block;}
+			.zx-ad .more-btn img{width:40%;}
+			.zx-teacher{width:100%; padding:0 10px; box-sizing:border-box;}
+			.zx-teacher .s-ad-img{display:block;position:relative;  margin:0 auto;}
+			.zx-teacher .s-ad-img .more-btn{position:absolute; bottom:9%; right:5%; width:70px; height:15px;}
+			.zx-teacher .s-ad-img .more-btn2{position:absolute; bottom:5%; right:32%; width:70px; height:15px;}
+			.zx-teacher .s-ad-img .more-btn img{width:60px;height:10px;}
+			.zx-teacher .more-btn{display:block;}
+			.zx-teacher .more-btn img{width:40%;margin-top:10px;}
+			 a{color:#333; text-decoration: none;}
+			.zx-sign .zx-slogan img{width:85%;}
+			.zx-sign .zx-login img{width:65%;} 
+			.zx-sign .zx-login{width:90%; height:235px;margin:0 auto; background: rgba(255,255,255,.5); border-radius:10px; }
+			.zx-sign{width:100%; height:auto; background-size: cover;padding-bottom:30px;}
+			.zx-sign-bg1{ background:url(appimg/sloganbg1.jpg) no-repeat center center; }
+			.zx-sign-bg2{ background:url(appimg/sloganbg2.jpg) no-repeat center center; }
+			.zx-sign .zx-slogan{padding:35px 0 30px 0; text-align: center;}
+			.zx-sign .zx-login .box{width:270px; margin:0 auto; padding-top:20px;}
+			.zx-sign .zx-login .box .input-box{width:270px;height:35px; line-height:35px; border:1px solid #000; border-radius:5px; margin-top:20px;}
+			.zx-sign .zx-login .box .input-box span{padding-left:10px; font-weight:bold; color:#333333;}
+			.zx-sign .zx-login .box .input-box .input{width:194px;height:35px; background:none;border: none;outline: none;}
+			.zx-sign .zx-login .box .login-btn{text-align:center; margin-top:20px; display:block;}
+			.zx-footer{width:100%; padding:30px 0; line-height:30px;color:#333; text-align: center;}
+			.zx-footer a{color:#333; text-decoration: none;}
+			.zx-footer a:first-child{margin-right:30px;}
+				/* 轮播图 */
+				#slider>a>img{ 
+					width:100%;
+					position:absolute; top:0;left:0;
+					opacity: 0;
+					transition:all .5s linear; /*渐变效果*/
+					overflow:scroll; /*显示横、纵向滚动条*/
+					height:80%;
+				}
+				#slider>a>img.show{
+					opacity: 1;
+					z-index: 10;
+				}
+				#slider{ 
+					height:20rem;
+					position:relative;
+					margin-top:30px;
+				}
+
+				/* 弹窗 */
+				body{
+					position:relative;width:100%;height:100%
+				}
+				.popUp .firstPic{
+					position: absolute;
+					top:16%;
+					left:1%;
+					width:20%;
+					height:10%;
+				}
+				.popUp .secondPic{
+					position: absolute;
+					top:16%;
+					left:25%;
+					width:40%;
+					height:10%;
+				}
+				.popUp .baoMing{
+					position: absolute;
+					top: 27%;
+					left: 2%;
+					width:20%;
+					height:20px;
+				}
+				.popUp .keCheng{
+					position: absolute;
+					top: 27%;
+					left: 27%;
+					width:20%;
+					height:20px;
+				}
+				.popUp .xueXi{
+					position: absolute;
+					top: 27%;
+					left: 52%;
+					width:20%;
+					height:20px;
+				}
+				.popUp .baokaoThings{
+					position: absolute;
+					top: 39%;
+					left: 2%;
+					width:20%;
+					height:20px;
+				}
+				.popUp .baokaoTime{
+					position: absolute;
+					top: 39%;
+					left: 27%;
+					width:20%;
+					height:20px;
+				}
+				.popUp .baokaoFee{
+					position: absolute;
+					top: 39%;
+					left: 52%;
+					width:20%;
+					height:20px;
+				}
+				.popUp .gaiGe{
+					position: absolute;
+					top:50%;
+					left:2%;
+					width:22%;
+					height:20px;
+				}
+				.popUp .middle_text{
+					position: absolute;
+					top:50%;
+					left:25%;
+					font-size:0.9rem;
+					color:#000;
+				}
+				.popUp .logoYun{
+					position: absolute;
+					top:51%;
+					left:73%;
+					width:7%;
+					height:8%;
+				}
+				.popUp .logoYun2{
+					position: absolute;
+					top:62%;
+					left:83%;
+					width:7%;
+					height:8%;
+				}
+				.popUp .kaoGang{
+					position: absolute;
+					top:61%;
+					left:2%;
+					width:22%;
+					height:20px;
+				}
+				.popUp .middle_text2{
+					position: absolute;
+					top:61%;
+					left:25%;
+					font-size:0.9rem;
+					color:#000;
+				}
+				.popUp .popUp_footer{
+					position: absolute;
+					top:82%;
+					left:2%;
+				}
+				::-webkit-input-placeholder {
+					color: grey;
+					font-size:10px;
+				}
+					:-moz-placeholder {/* Firefox 18- */
+					color: grey;
+				}
+					::-moz-placeholder{/* Firefox 19+ */
+					color: grey;
+				}
+					:-ms-input-placeholder {
+					color: grey;
+				}
+
+				.popUp .longWrite{
+					position: absolute;
+					top:72%;
+					left:2%;
+					width:70%;
+					height:8%;
+				}
+				.popUp .popUp_footer input{
+					width:28%;
+				}
+				.popUp .assess{
+					width:26%;
+					position:absolute;
+					top:2%;
+					left:61%;
+				}
+				.popUp .close1{
+					position: absolute;
+					top:-13%;
+					left:89%;
+					width:30px;
+				}
+				.popUp{
+					width:80%;
+					height:30vh;
+					left:10%;
+					position: fixed;
+					top:7%;
+					z-index:99;
+					background: url(./images/Luoye.png) no-repeat;
+					background-size:100%;
+				}
+				/* back to top */
+				.back_to_top{
+					position:fixed;
+					bottom:180px;
+					right:1%;
+					border:1px solid #888;
+					width:3.3rem;
+					height:3rem;
+					background:url("./images/返回顶部.png");
+					z-index: 1;
+				}
+				@media screen and (min-width:410px) and (max-width: 412px) and (min-height:730px) and (max-height:731px){
+					.popUp {
+						height:30vh;
+					}
+				}
+				@media screen and (min-width:410px) and (max-width: 412px) and (min-height:822px) and (max-height:824px){
+					.popUp {
+						height:27vh;
+					}
+				}
+				@media screen and (min-height: 811px) and (max-height: 812px){
+					.popUp {
+						height:25vh;
+					}
+				}
+				@media screen and (min-width:767px) and (max-width:768px) and (min-height:1023px) and (max-height:1024px){
+					.popUp {
+						height:43vh;
+					}
+				}
+		</style>
+		<script src="js/jquery.js"></script>
+		<script>
+			function task(){
+				var img=slider.getElementsByClassName("show")[0];
+				img.className="";
+				if(img.nextElementSibling)
+				img.nextElementSibling.className="show";
+				else
+				img.parentNode.children[0].className="show";
+			}
+    		setInterval(task,2000);
+			/* 弹窗 */
+		$("document").ready(function(){
+			setTimeout(function(){
+				$(".popUp").show()
+			},2000);
+				$(".close1").click(function(){
+					$(".popUp").hide();
+					setTimeout(function(){
+						$(".popUp").show();
+					},30000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!--top--begin-->
+		<div class="zx-top">
+			<a class="logo" onclick="talk_53()"><img src="appimg/logo.png" /></a>
+			<div class="tel fr"><img src="appimg/tel.png" /></div>
+		</div>
+		<!--top--end-->
+		<!--header--start-->
+		<div class="zx-header">
+			<div class="center">
+				<a onclick="talk_53()" class="li curr">AFP考试流程</a>
+				<span>|</span>
+				<a onclick="talk_53()" class="li">AFP考试简介</a>
+				<span>|</span>
+				<a onclick="talk_53()" class="li">AFP师资力量</a>
+				<a onclick="talk_53()" class="li">AFP报考条件</a>
+				<span>|</span>
+				<a onclick="talk_53()" class="li">AFP报考时间</a>
+			</div>
+		</div>
+		<!--header--end-->
+		<!--banner--begin-->
+		<div class="zx-banner" id="slider" style="position: relative;">
+			<a href="" onload="talk_53()">
+				<img src="images/banner1.png"  class="show">
+				<img src="images/banner2.png">
+			</a>
+		</div>
+		<!-- <a class="btn" onclick="talk_53()"><img src="appimg/prebtn.png" /></a> -->
+		<!--banner--end-->
+		<!--AFP考试信息查询--begin-->
+		<!-- 弹窗 -->
+		<div class="popUp" style='display:none;'>
+			<div class="Fuyuansu">
+				<div>
+					<a onclick="talk_53()"><img src="./images/logo3.png" alt="" class="firstPic"></a> 
+					<a onclick="talk_53()"><img src="./images/winRuns.png" alt="" class="secondPic"></a> 
+				</div>
+				<div>
+					<a onclick="talk_53()"><img src="./images/报名.png" alt="" class="baoMing"></a> 
+					<a onclick="talk_53()"><img src="./images/课程.png" alt="" class="keCheng"></a> 
+					<a onclick="talk_53()"><img src="./images/学习.png" alt="" class="xueXi"></a> 
+				</div>
+				<div>
+					<a onclick="talk_53()"><img src="./images/报考条件.png" alt="" class="baokaoThings"></a> 
+					<a onclick="talk_53()"><img src="./images/报考时间.png" alt="" class="baokaoTime"></a> 
+					<a onclick="talk_53()"><img src="./images/报考费用.png" alt="" class="baokaoFee"></a>
+				</div>
+				<div>
+					<a onclick="talk_53()">
+						<img src="./images/2_19.png" alt="" class="gaiGe">
+						<p class="middle_text">AFP报名资料免费领取</p>
+						<img src="./images/2_22.png" alt="" class="logoYun">
+					</a>
+				</div>
+				<div>
+					<a onclick="talk_53()">
+						<img src="./images/2_26.png" alt="" class="kaoGang">
+						<p class="middle_text2">AFP新考纲知识点免费领取</p>
+						<img src="./images/2_22.png" alt="" class="logoYun2">
+					</a>
+				</div>
+				<div>
+					<a onclick="talk_53()"><img src="./images/组16.png" alt="" class="longWrite"></a>
+				</div>
+				<div class="popUp_footer">
+					<input type="phone" id="perPhone" placeholder="请输入您的手机号"  style="height:20px;line-height: normal">
+					<input type="name" id="perName" placeholder="请输入您的姓名" style="height:20px;line-height: normal">
+					<a href="javascript:;" id="tj1"><img src="./images/2_36.png" alt="" class="assess"></a>
+					<a class="close1"><img src="./images/1_11.png" alt=""></a>	
+				</div>
+			</div>
+		</div>
+
+		<div class="zx-ad">
+			<div class="title">
+				<img src="appimg/tit1.png" />
+			</div>
+			<div class="ad-img">
+				<div class="adp-img">
+					<img src="appimg/con1-1.png" />
+					<a class="a1" onclick="talk_53()"></a>
+					<a class="a2" onclick="talk_53()"></a>
+					<a class="a3" onclick="talk_53()"></a>
+				</div>
+				<div class="clear" style="width:100%;height:30px;"></div>
+				<div class="adp-img">
+					<img src="appimg/con1-2.png" />
+					<a class="a1" onclick="talk_53()"></a>
+					<a class="a2" onclick="talk_53()"></a>
+					<a class="a3" onclick="talk_53()"></a>
+				</div>
+			</div>
+		</div>
+		<button class="back_to_top" title="返回顶部"></button>
+		<!--AFP考试信息查询--end-->
+		<!--免费试听课--start-->
+		<div class="zx-ad">
+			<div class="title" style="margin-top:0;">
+				<img src="appimg/tit2.png" />
+			</div>
+		</div>
+		<div class="grey-bg">
+			<div class="zx-video">
+				<div class="video">
+					<video style="width:100%;" id="video" src="images/video.mp4" controls="controls"  poster="./appimg/video.jpg">
+						你的浏览器暂不支持，请升级更高版本的浏览器。
+					</video>
+				</div>
+				<div class="con">
+					<span class="tit">课程介绍</span>
+					<p class="list">AFP资格认证考试是一项国际标准，内容本土化，水平国际化的考试，2009年以前，AFP资格证书由中国金融教育发展基金会金融理财标准委员会（标委会）进行认证，2009年开始，随着标委会转型为国际金融理财标准委员会中国专家委员会和现代国际金融理财标准（上海）有限公司（也即FPSB China）之后，AFP金融理财师由FPSB China进行认证。AFP已经纳入FPSB国际认证体系。从2008年开始，金融理财标准委员开展了金融理财师的专业认证。成为一名合格的AFP持证人需要达到教育（Education）、考试（Examination）、从业经验（Experience）和道德（Ethics）四个标准，即（4E）标准。由中国金融理财标准委员会组织考试。</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<!--免费试听课--end-->
+		<!--AFP就业前景--begin-->
+		<div class="zx-ad">
+			<div class="title">
+				<img src="appimg/tit3.png" />
+			</div>
+			<div class="ad-img">
+				<img src="appimg/con3.jpg" />
+				<a class="more-btn" onclick="talk_53()" style="margin-top:20px;">
+					<img src="appimg/btn3.png" />
+				</a>
+			</div>
+		</div>
+		<!--AFP就业前景--end-->
+		<!--预约报名--begin-->
+		<div class="zx-sign zx-sign-bg1">
+			<div class="zx-slogan">
+				<img src="appimg/slogan1.png" />
+			</div>
+			<div class="zx-login">
+				<div class="box">
+					<div class="input-box">
+						<span>姓名：</span>
+						<input class="input" type="text" id="UName" />
+					</div>
+					<div class="input-box">
+						<span>电话：</span>
+						<input class="input" type="text" id="UPhone" />
+					</div>
+					<a class="login-btn" onclick="check()"><img src="appimg/slogbtn.png"/></a>
+				</div>
+			</div>
+		</div>
+		<!--预约报名--end-->
+		<!--选择我们的4大优势--begin-->
+		<div class="zx-ad" style="margin-top:50px;">
+			<div class="title">
+				<img src="appimg/tit4.png" />
+			</div>
+			<div class="ad-img grey-bg" style="padding:0">
+				<img src="images/1.png">
+				<a class="more-btn" onclick="talk_53()">
+					<img src="appimg/btn4.png" />
+				</a>
+			</div>
+		</div>
+		<!--选择我们的4大优势--end-->
+		<!--讲师--begin-->
+		<div class="zx-teacher">
+			<div class="title">
+				<img src="appimg/tit5.png" />
+			</div>
+			<div class="s-ad-img">
+				<img src="images/1@3x.png" />
+				<a class="more-btn" onclick="talk_53()"></a>
+			</div>
+			<div class="s-ad-img">
+				<img src="images/2@3x.png" />
+				<a class="more-btn2" onclick="talk_53()"></a>
+			</div>
+			<div class="s-ad-img">
+				<img src="images/3@3x.png" />
+				<a class="more-btn" onclick="talk_53()"></a>
+			</div>
+			<a class="more-btn" onclick="talk_53()">
+				<img src="appimg/btn5.png" />
+			</a>
+		</div>
+		<!--讲师--end-->
+		<!--预约报名--begin-->
+		<div class="zx-sign zx-sign-bg2" style="margin-top:20px;">
+			<div class="zx-slogan">
+				<img src="appimg/slogan2.png" />
+			</div>
+			<div class="zx-login">
+				<div class="box">
+					<div class="input-box">
+						<span>姓名：</span>
+						<input class="input" type="text" id="userName" />
+					</div>
+					<div class="input-box">
+						<span>电话：</span>
+						<input class="input" type="text" id="userPhone" />
+					</div>
+					<a class="login-btn" id="tj"><img src="appimg/slogbtn.png"/></a>
+				</div>
+			</div>
+		</div>
+		<script>
+			function check(){
+				if (checkUName()&&checkUPhone()){
+					alert("测试")
+					post53();
+					alert("提交成功")
+				}
+			}
+		</script>
+			<script type="text/javascript">
+		//验证用户名   
+			function checkUName(){
+			var uname = document.getElementById('UName');
+			var pattern = /^[\u4e00-\u9fa5]{2,4}$/; 
+			if(uname.value.length == 0){
+				alert("姓名不能为空")
+			return false;
+			}
+			if(!pattern.test(uname.value)){
+				alert("用户名不合规范")
+			return false;
+			}
+			else{
+			return true;
+			}
+			}
+			//验证手机号
+			function checkUPhone(){
+			var uphone = document.getElementById('UPhone');
+			var pattern = /^1[34578]\d{9}$/; //验证手机号正则表达式
+			if(!pattern.test(uphone.value)){
+				alert("手机号码不合规范")
+			return false;
+			}
+			else{
+			return true;
+			}
+			}
+	</script>
+		<script>
+		function post53(){
+		 var KFapi = $53.createApi();
+		 KFapi.push('cmd','lword');
+		 KFapi.push('name', document.getElementById("UName").value);
+		 KFapi.push('msg','众信教育');
+		 KFapi.push('phone',document.getElementById("UPhone").value);
+		 KFapi.push('notes','众信教育');
+		 KFapi.query();
+		}
+		</script>
+		
+		<script>
+		function open53(){
+		 var KFapi = $53.createApi();
+		 KFapi.push('cmd','lword');
+		 KFapi.push('name', document.getElementById("userName").value);
+		 KFapi.push('msg','众信教育');
+		 KFapi.push('phone',document.getElementById("userPhone").value);
+		 KFapi.push('notes','众信教育');
+		 KFapi.query();
+		}
+		</script>
+	<script>(function() {var _53code = document.createElement("script");
+		_53code.src = "https://tb.53kf.com/code/code/10184920/1";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(_53code, s);})();
+	</script>
+	<script>
+			var xd= document.getElementById("tj")
+			xd.onclick = function (){
+				if (checkUserName()&&checkPhone()) {
+					open53();
+					alert("提交成功")
+					talk_53();
+				}	
+			}
+	</script>	
+
+	<script>
+		function open_53(){
+			var KFapi = $53.createApi();
+			KFapi.push('cmd','lword');
+			KFapi.push('name', document.getElementById("perName").value);
+			KFapi.push('msg','from 来自360渠道2的留言信息');
+			KFapi.push('phone',document.getElementById("perPhone").value);
+			KFapi.push('notes','来自360渠道');
+			KFapi.query();
+		}
+	</script>
+	<script type="text/javascript">
+		//验证用户名   
+			function checkUserName(){
+			var username = document.getElementById('userName');
+			var pattern = /^[\u4e00-\u9fa5]{2,4}$/; 
+			if(username.value.length == 0){
+				alert("姓名不能为空")
+			return false;
+			}
+			if(!pattern.test(username.value)){
+				alert("用户名不合规范")
+			return false;
+			}
+			else{
+			return true;
+			}
+			}
+			//验证手机号
+			function checkPhone(){
+			var userphone = document.getElementById('userPhone');
+			var pattern = /^1[34578]\d{9}$/; //验证手机号正则表达式
+			if(!pattern.test(userphone.value)){
+				alert("手机号码不合规范")
+			return false;
+			}
+			else{
+			return true;
+			}
+			}
+	</script>
+	<script LANGUAGE="JavaScript">
+			function talk_53() {
+  				window.open ("https://tb.53kf.com/code/client/10184920/1", "newwindow", "height=600, width=800, toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+  		}
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+  		var hm = document.createElement("script");
+  		hm.src = "https://hm.baidu.com/hm.js?5a92ff678d39554679fd022e3fae9037";
+  		var s = document.getElementsByTagName("script")[0]; 
+  		s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script src="js/button.js"></script>
+	<script>
+		$("#tj1").click(function(){
+			$("#userPhone").val($("#perPhone").val());
+			$("#userName").val($("#perName").val());
+			$("#tj").trigger('click');
+		});
+	</script>
+
+		<!--预约报名--end-->
+		<!--footer--begin-->
+		<div class="zx-footer">
+			<p><a href=https://www.zhongxinjiaoyu.com/sysWeb/help/helpIndex?id=270 class="m-r-20">关于我们</a><a href=https://www.zhongxinjiaoyu.com/cmsWeb/web/article/articleIndex>联系我们</a></p>
+			<p>北京众信安邦教育科技有限公司</p>
+			<p>咨询电话：&nbsp;&nbsp;&nbsp;&nbsp;400-090-1050</p>
+		</div>
+		<!--footer--end-->
+	</body>
+</html>
