@@ -1,0 +1,717 @@
+
+@media screen and (min-width:300px) and (max-width:359px){
+    .header{height:100px;}
+    #headerdiv .logoBox{width: 25%; position: absolute; top:25%;left:2%;}
+    #headerdiv .logoBox img{ height:3rem; }
+    .logoBox2 {width:47%;position:absolute;left:28%;top:30%;}
+    .logoBox3{ width:28%;position: absolute;left:78%;top:29%;display: inline-block; }
+    .logoBox3 img{display: none;}
+    .logoBox3 div span{ font-size: 0.7rem}
+    .swiper-container img{width:100%;height:11rem;}
+    .secBox{position:absolute;left:20%;font-size:10%}
+    .secBox1 {width:5rem;height:14rem;top:8.5%;left:7%}
+    .textFirst { font-size:0.5px; padding-top: 0%;}
+    .sec_text p{font-size:1px;}
+    .secBox1 p{ margin-top:0.4rem }
+    .sec_text{top:21%;left:5%}
+    .secBox2{ width:5rem;height:32rem;position:absolute;left:7%;top:49.5%; }
+    .secBox2 p{margin-top:0.4rem}
+    .sec_text2{ top:0%;left:5%; }
+    .sec_text2 p{font-size:1px}
+    .secBox3{width:5rem;height:14rem;position:absolute;left:41.5%;top:8.5%}
+    .secBox3 p{margin-top:0.4rem}
+    .sec_text3{top:21%}
+    .sec_text3 p{font-size:1px}
+    .secBox4{width:5rem;height:32rem;position: absolute;left:41.5%;top:49.5%}
+    .sec_text4{top:0%}
+    .sec_text4 p{font-size:1px}
+    .secBox5 { width:5rem;height:32rem;left:72.5%;top:8.5% }
+    .secBox5 p{margin-top:0.4rem}
+    .sec_text5 p{font-size:1px}
+    .secBox6{ width:5rem;height:21rem;left:72.5%;top:49.5%}
+    .sec_text6 p{font-size:1px}
+    .sec_text a img{left:0.3rem;top:9rem;width:80%;height:1rem;}
+    .sec_text2 a img{left:0.2rem;top:8.6rem;width:80%;height:1rem;}
+    .sec_text3 a img {left: 0.3rem;top: 8.9rem;width: 80%;height:1rem;}
+    .sec_text4 a img {position: absolute;top: 8.6rem;width: 80%;height: 1rem;left:0.2rem}
+    .sec_text5{top:9.2%}
+    .sec_text5 a img {position: absolute;left: 0.1rem;top: 8.8rem;width: 80%;height: 1rem;}
+    .sec_text6 a img {position: absolute;left: 0.4rem;top: 8.7rem;width: 80%;height: 1rem;}
+    .sec_text6 {position: absolute;top: -1%;left: 5%;}
+    .section1{height:37rem;background-size:164% 100%}
+    .section2 .afpBox p{ text-align: center;font-size:1.5rem }
+    .section2 .afpBox .qjPic1 {position: absolute;left: 10%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic2 {position: absolute;left: 40%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic3 {position: absolute;left: 70%;top: 12%;width:25%;height:6%}
+    .whyAfp img {position: absolute;left: 57%;top: 26%;width:37%;height:33%}
+    .writeAfp p{position: absolute;left:11%;top:19%;width:45%;}
+    .section2{height:32rem}
+    .section3{width:100%;height:20rem;background-size:100% 100%}
+    .fir_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left: 11%;}
+    .sec_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;}
+    .thr_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left:7%}
+    .fir_img img{width:auto;height:36%;position: absolute;left:14%;top:4%}
+    .fir_img .miss{margin-top:2.3rem;font-size:14px}
+    .fir_img .cant{margin-top:0rem; font-size:0.1rem}
+    .sec_img img{width:auto;height:36%;position: absolute;left:18%;top:4%}
+    .sec_img .tmuch{margin-top:2.3rem;font-size:14px}
+    .sec_img .tprice{margin-top:0rem; font-size:0.1rem}
+    .thr_img img{width:auto;height:36%;position: absolute;left:22%;top:4%}
+    .thr_img .tried{margin-top:2.3rem;font-size:14px}
+    .thr_img .nper{margin-top:0rem; font-size:0.1rem}
+    .xiala1{position: absolute;left:-9.5%;top:60.5%;width: 16%;height:7%;font-size:72%}
+    .xiala2{position: absolute;left:31%;top:10%;width: 16%;height:7%;font-size:72%}
+    .xiala3{position: absolute;left:61%;top:10%;width:16%;height:7%;font-size:72%}
+    .xiala4{position: absolute;left:-9.5%;top:69%;width:16.5%;height:7%;font-size:72%}
+    .sr1{position: absolute;left:30.7%;top:61%;width:16%;height:7%;font-size:72%}
+    .sr2{position: absolute;left:60.7%;top:68.5%;width:16%;height:7%;font-size:72%}
+    .fangan{ width:9rem;height:1.6rem;top:83%;left:32.5%; }
+    .zdFangan{left:7%}
+    .bo1{ background-size: 100% 100%;width:14rem;height:16rem;left:6%;top:92%; }
+    .whatJr{font-size:1.1rem;}
+    .isJr{ font-size:0.8rem; }
+    .videos{ width:10rem;height:10rem;top:16rem;left:9rem}
+    .section4{ top:17rem;background-size:110% 53%; }
+    .anyWhere{ font-size:1.2rem;left:10%;top:2%;}
+    .whyC{ width:50%;height:40%;top:7%;left:54% }
+    .diTu{ height:29% }
+    .fourYears{ line-height:1rem }
+    .ceyice{left:17%;top:39%;width:70%;height:3%}
+    .shengFen{ width:4rem;height:1.5rem;position: absolute;top:-40%;left:-5%;}
+    .shiQu{width:4rem;height:1.5rem; position: absolute;top:-40%;left:17%;}
+    .inPut1{ width:5rem;height:1.4rem;position: absolute;top:44%;left:39% }
+    .inPut2{ width:5rem;height:1.4rem;position: absolute;top:44%;left:63% }
+    .result{ text-align: center;color:#fff;margin-top: 0.1rem; }
+    .resultDiv{top:49%;width:40%;height:3%;left:31%}
+    .section5{ top:0rem; width:100%;height: 39rem}
+    .sPlan{left:35%;top:0%;font-size:1.5rem;}
+    .sPlan1{width:48%;text-align: start;left:35%}
+    .s5Div{ top:15% ;width:19rem;}
+    .s5Div1{ top:15%;left:6%;width:19rem; }
+    .s5Div2{ top:15%;left:6%; width:19rem;}
+    .s5Firpic{width:30%;height:20%;margin-top:0%;margin-left:0%}
+    .s5Secpic{ width:30%;height:20%;margin-top:43%;margin-left:0% }
+    .s5Thrpic{ width:30%;height:20%;margin-top:86%;margin-left:0%  }
+    .s5Span1{ top:17%;left:3%;font-size:1rem }
+    .s5Span{top:53%;left:35%;font-size:1.5rem}
+    .s5Span1{ top:67%;left:34%;width:48% }
+    .span1{top:70%;left:35%;font-size:1.5rem}
+    .span2{top:77%;left:34.5%;font-size:1rem;width: 48%;text-align: start}
+    .section6{top:0rem;background-size:100% 90%}
+    .section6 h2{padding-top:2rem}
+    .selfList{width:22%;height:11rem;top:15%;left:4%;background-size:100% 100%}
+    .shouRu{font-size:1rem;text-align: center;left:7%;}
+    .shouRuImg{width:80%;height:11%;left:11.5%;top:37%}
+    .shouRuImg2{width:80%;height:11%;left:11.5%;top:59%}
+    .shouRu1{font-size:1rem;top:70%;text-align: center;left:5%}
+    .selfList1{ width:22%;height:11rem;top:-21.5%;left:28%;background-size:100% 100% }
+    .selfImg{left:41.5%;top:25%}
+    .gangWei{left:8%;top:11%;font-size:1rem;text-align: center}
+    .gangWeiImg{width:80%;height:11%;top:37%;left:11%}
+    .gangWei1{ font-size:1rem;text-align: center;left:7%;top:70%}
+    .gangWeiImg2{width:80%;height:11%;top:60%;left:11%}
+    .youCan{width:60%;height:61%;left:41%;top:40%}
+    .youCanImg{width:0%;height:61%;}
+    .selfList2{background-size:100% 100%;position: relative;width: 4.4rem;height: 10.8rem;top: -57.5%;left: 52%;}
+    .buTie{font-size:1rem;left:7%;top:12%;text-align: center}
+    .buTieImg{width:80%;height:11%;left:11%;top:38%}
+    .buTieImg2{width:80%;height:11%;left:11%;top:61%}
+    .buTie1{font-size:1rem;text-align: center;left:2.8%;top:72%}
+    .selfList3{background-size:100% 100%;position: relative;width:4rem;height:11.4rem;top: -94.5%;left:76%}
+    .touZi{font-size:1rem;position: absolute;left:7%;top:14%;text-align: center}
+    .touZiImg{position: absolute;left: 11.5%;top: 38%;width:80%;height:11%}
+    .touZiImg2{position: absolute;left: 12.5%;top: 61%;width:80%;height:11%}
+    .touZi1{font-size:1rem;left:10%;top:73%;text-align: center}
+    .section7{top:11rem;background-size:100% 50%}
+    .tDiao{width:21%;height:9rem;left:4rem;top:-5rem}
+    .tKuang{width:59%;height:9rem;left:7.5rem;top:-5rem}
+    .firstP1{font-size:1.4rem;position: absolute;left:11rem;top:-5rem}
+    .bDiao{width:4%;height:2%;left:16rem;top:-4.6rem}
+    .firstP2{font-size:10px;left:8rem;top:-2rem;width:11rem}
+    .tSong{left:14rem;top:8.7rem;width:21%;height:9rem}
+    .sKuang{left:2rem;top:8.7rem;width:61%;height:9rem}
+    .secondP1{font-size:1.4rem;left:3rem;top:9rem;}
+    .sSong{left:9.5rem;top:9.2rem;width:4%;height:2%}
+    .secondP2{font-size:10px;left:3rem;top:11rem;width:11rem}
+    .tLiang{width:21%;height:9rem;top:21rem;left:3rem}
+    .lKuang{left:7.3rem;top:22rem;width:60%;height:9rem}
+    .thirdP1{font-size:1.4rem;left:8rem;top:22rem;}
+    .sLiang{left:13.5rem;top:22.5rem;width:4%;height:2%}
+    .thirdP2{font-size:10px;left:8rem;top:24rem;width:11rem}
+    .section8{top:-21rem;height:19rem}
+    .picButton img{left:34.5%;top:73%;width:32%;height:10%;z-index:0}
+    .picButton p{left:36%}
+    .hPic img{height:29%}
+    .dPic img{height:34%}
+    .nPic img{height:28%}
+    .footer{margin-top:-51%}
+    .xinxi{bottom:0px;height:143px;width:86%;display: none}
+    .popUp{width:76%;left:4%;background-size:100% 100%;position: fixed;height:36vh}
+    .popUp .logoYun{top:38%;left:58%}
+    .popUp .middle_text{left:25%}
+    .popUp .logoYun{left:81%;top:52%}
+    .popUp .middle_text2{left:25%}
+    .popUp .logoYun2{left:90%}
+    .longWrite{width:93%}
+    .popUp .keCheng{left:34%}
+    .popUp .baoMing{left:1%}
+    .popUp .xueXi{left:67%}
+    .popUp .baokaoThings{left:1%}
+    .popUp .baokaoTime{left:34%}
+    .popUp .baokaoFee{left:67%}
+    .popUp_footer .assess{top:10%}
+    .popUp_footer input{width:33%;}
+    .Fuyuansu{bottom:1rem}
+    .xinxi form{left:2%}
+    a .assess{margin-bottom:-8px}
+}
+
+
+
+@media screen and (min-width:360px) and (max-width:480px){
+    .header{height:100px;}
+    #headerdiv .logoBox{width: 25%; position: absolute; top:25%;left:2%;}
+    #headerdiv .logoBox img{ height:3rem; }
+    .logoBox2 {width:47%;position:absolute;left:28%;top:30%;}
+    .logoBox3{ width:28%;position: absolute;left:78%;top:29%;display: inline-block; }
+    .logoBox3 img{display: none;}
+    .logoBox3 div span{ font-size: 0.7rem}
+    .swiper-container img{width:100%;height:11rem;}
+    .secBox{position:absolute;left:20%;font-size:10%}
+    .secBox1 {width:5rem;height:14rem;top:8.5%;left:7%}
+    .textFirst { font-size:0.5px; padding-top: 0%;}
+    .sec_text p{font-size:1px;}
+    .secBox1 p{ margin-top:0.4rem }
+    .sec_text{top:21%;left:5%}
+    .secBox2{ width:5rem;height:32rem;position:absolute;left:7%;top:49.5%; }
+    .secBox2 p{margin-top:0.4rem}
+    .sec_text2{ top:0%;left:5%; }
+    .sec_text2 p{font-size:1px}
+    .secBox3{width:5rem;height:14rem;position:absolute;left:41.5%;top:8.5%}
+    .secBox3 p{margin-top:0.4rem}
+    .sec_text3{top:21%}
+    .sec_text3 p{font-size:1px}
+    .secBox4{width:5rem;height:32rem;position: absolute;left:41.5%;top:49.5%}
+    .sec_text4{top:0%}
+    .sec_text4 p{font-size:1px}
+    .secBox5 { width:5rem;height:32rem;left:72.5%;top:8.5% }
+    .secBox5 p{margin-top:0.4rem}
+    .sec_text5 p{font-size:1px}
+    .secBox6{ width:5rem;height:21rem;left:72.5%;top:49.5%}
+    .sec_text6 p{font-size:1px}
+    .sec_text a img{left:0.3rem;top:9rem;width:80%;height:1rem;}
+    .sec_text2 a img{left:0.2rem;top:8.6rem;width:80%;height:1rem;}
+    .sec_text3 a img {left: 0.3rem;top: 8.9rem;width: 80%;height:1rem;}
+    .sec_text4 a img {position: absolute;top: 8.6rem;width: 80%;height: 1rem;left:0.2rem}
+    .sec_text5{top:9.2%}
+    .sec_text5 a img {position: absolute;left: 0.1rem;top: 8.8rem;width: 80%;height: 1rem;}
+    .sec_text6 a img {position: absolute;left: 0.4rem;top: 8.7rem;width: 80%;height: 1rem;}
+    .sec_text6 {position: absolute;top: -1%;left: 5%;}
+    .section1{height:37rem;background-size:164% 100%}
+    .section2 .afpBox p{ text-align: center;font-size:1.5rem }
+    .section2 .afpBox .qjPic1 {position: absolute;left: 10%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic2 {position: absolute;left: 40%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic3 {position: absolute;left: 70%;top: 12%;width:25%;height:6%}
+    .whyAfp img {position: absolute;left: 57%;top: 26%;width:37%;height:33%}
+    .writeAfp p{position: absolute;left:11%;top:19%;width:45%;}
+    .section2{height:32rem}
+    .section3{width:100%;height:20rem;background-size:100% 100%}
+    .fir_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left: 11%;}
+    .sec_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;}
+    .thr_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left:7%}
+    .fir_img img{width:auto;height:36%;position: absolute;left:14%;top:4%}
+    .fir_img .miss{margin-top:2.3rem;font-size:14px}
+    .fir_img .cant{margin-top:0rem; font-size:0.1rem}
+    .sec_img img{width:auto;height:36%;position: absolute;left:18%;top:4%}
+    .sec_img .tmuch{margin-top:2.3rem;font-size:14px}
+    .sec_img .tprice{margin-top:0rem; font-size:0.1rem}
+    .thr_img img{width:auto;height:36%;position: absolute;left:22%;top:4%}
+    .thr_img .tried{margin-top:2.3rem;font-size:14px}
+    .thr_img .nper{margin-top:0rem; font-size:0.1rem}
+    .xiala1{position: absolute;left:-9.5%;top:60.5%;width: 16%;height:7%;font-size:72%}
+    .xiala2{position: absolute;left:31%;top:10%;width: 16%;height:7%;font-size:72%}
+    .xiala3{position: absolute;left:61%;top:10%;width:16%;height:7%;font-size:72%}
+    .xiala4{position: absolute;left:-9.5%;top:69%;width:16.5%;height:7%;font-size:72%}
+    .sr1{position: absolute;left:30.7%;top:61%;width:16%;height:7%;font-size:72%}
+    .sr2{position: absolute;left:60.7%;top:68.5%;width:16%;height:7%;font-size:72%}
+    .fangan{ width:9rem;height:1.6rem;top:83%;left:32.5%; }
+    .zdFangan{left:7%}
+    .bo1{ background-size: 100% 100%;width:14rem;height:16rem;left:6%;top:92%; }
+    .whatJr{font-size:1.1rem;}
+    .isJr{ font-size:0.8rem; }
+    .videos{ width:10rem;height:10rem;top:16rem;left:14rem}
+    .section4{ top:17rem;background-size:110% 53%; }
+    .anyWhere{ font-size:1.2rem;left:10%;top:2%;}
+    .whyC{ width:50%;height:40%;top:7%;left:54% }
+    .diTu{ height:29% }
+    .fourYears{ line-height:1.2rem;font-size:0.8rem }
+    .ceyice{left:17%;top:39%;width:70%;height:3%}
+    .shengFen{ width:4rem;height:1.5rem;position: absolute;top:-40%;left:-5%;}
+    .shiQu{width:4rem;height:1.5rem; position: absolute;top:-40%;left:17%;}
+    .inPut1{ width:5rem;height:1.4rem;position: absolute;top:44%;left:39% }
+    .inPut2{ width:5rem;height:1.4rem;position: absolute;top:44%;left:63% }
+    .result{ text-align: center;color:#fff;margin-top: 0.1rem; }
+    .resultDiv{top:49%;width:40%;height:3%;left:31%}
+    .section5{ top:0rem; width:100%;height: 39rem}
+    .sPlan{left:35%;top:0%;font-size:1.5rem;}
+    .sPlan1{width:48%;text-align: start;left:35%}
+    .s5Div{ top:15% }
+    .s5Div1{ top:15%;left:6% }
+    .s5Div2{ top:15%;left:6% }
+    .s5Firpic{width:30%;height:20%;margin-top:0%;margin-left:0%}
+    .s5Secpic{ width:30%;height:20%;margin-top:43%;margin-left:0% }
+    .s5Thrpic{ width:30%;height:20%;margin-top:86%;margin-left:0%  }
+    .s5Span1{ top:17%;left:3%;font-size:1rem }
+    .s5Span{top:53%;left:35%;font-size:1.5rem}
+    .s5Span1{ top:67%;left:34%;width:48% }
+    .span1{top:70%;left:35%;font-size:1.5rem}
+    .span2{top:77%;left:34.5%;font-size:1rem;width: 48%;text-align: start}
+    .section6{top:0rem;background-size:100% 90%}
+    .section6 h2{padding-top:2rem}
+    .selfList{width:22%;height:11rem;top:15%;left:3%;background-size:100% 100%}
+    .shouRu{font-size:1rem;text-align: center;left:7%;}
+    .shouRuImg{width:80%;height:11%;left:11.5%;top:37%}
+    .shouRuImg2{width:80%;height:11%;left:11.5%;top:59%}
+    .shouRu1{font-size:1rem;top:70%;text-align: center;left:5%}
+    .selfList1{ width:22%;height:11rem;top:-21.5%;left:28%;background-size:100% 100% }
+    .selfImg{left:41.5%;top:25%}
+    .gangWei{left:8%;top:11%;font-size:1rem;text-align: center}
+    .gangWeiImg{width:80%;height:11%;top:37%;left:11%}
+    .gangWei1{ font-size:1rem;text-align: center;left:7%;top:70%}
+    .gangWeiImg2{width:80%;height:11%;top:60%;left:11%}
+    .youCan{width:60%;height:61%;left:41%;top:40%}
+    .youCanImg{width:0%;height:61%;}
+    .selfList2{background-size:100% 100%;position: relative;width: 5rem;height: 11.1rem;top: -59.5%;left: 53%;}
+    .buTie{font-size:1rem;left:7%;top:12%;text-align: center}
+    .buTieImg{width:80%;height:11%;left:11%;top:38%}
+    .buTieImg2{width:80%;height:11%;left:11%;top:61%}
+    .buTie1{font-size:1rem;text-align: center;left:2.8%;top:72%}
+    .selfList3{background-size:100% 100%;position: relative;width:5rem;height:11.4rem;top: -97.5%;left:77%}
+    .touZi{font-size:1rem;position: absolute;left:7%;top:12%;text-align: center}
+    .touZiImg{position: absolute;left: 11.5%;top: 38%;width:80%;height:11%}
+    .touZiImg2{position: absolute;left: 12.5%;top: 61%;width:80%;height:11%}
+    .touZi1{font-size:1rem;left:3%;top:73%;text-align: center}
+    .section7{top:11rem;background-size:100% 50%}
+    .tDiao{width:21%;height:9rem;left:4rem;top:-6rem}
+    .tKuang{width:55%;height:9rem;left:9rem;top:-5rem}
+    .firstP1{font-size:1.4rem;position: absolute;left:11rem;top:-4.5rem}
+    .bDiao{width:4%;height:2%;left:16rem;top:-4.6rem}
+    .firstP2{font-size:10px;left:10rem;top:-2rem;width:11rem}
+    .tSong{left:16rem;top:9rem;width:21%;height:9rem}
+    .sKuang{left:4rem;top:8.7rem;width:55%;height:9rem}
+    .secondP1{font-size:1.4rem;left:5rem;top:9rem;}
+    .sSong{left:9.5rem;top:9.2rem;width:4%;height:2%}
+    .secondP2{font-size:10px;left:5rem;top:11rem;width:11rem}
+    .tLiang{width:21%;height:9rem;top:22rem;left:4rem}
+    .lKuang{left:8rem;top:22rem;width:55%;height:9rem}
+    .thirdP1{font-size:1.4rem;left:9rem;top:22.3rem;}
+    .sLiang{left:13.5rem;top:22.5rem;width:4%;height:2%}
+    .thirdP2{font-size:10px;left:9rem;top:24rem;width:11rem}
+    .section8{top:-20rem;height:18rem}
+    .picButton img{left:34.5%;top:73%;width:32%;height:10%;z-index:0}
+    .picButton p{left:38%}
+    .hPic img{height:29%}
+    .dPic img{height:34%}
+    .nPic img{height:28%}
+    .footer{margin-top:-41%}
+    .xinxi{bottom:1px;height:165px;display: none;}
+    .Fuyuansu{bottom:1rem}
+    .popUp{width:80%;left:7%;background-size:100% 90%}
+    .popUp .logoYun{top:51%;left:74%}
+    .popUp .middle_text{left:26%}
+    .popUp .logoYun2{left:84%}
+    .popUp .middle_text2{left:26%}
+    .logoYun2{left:86%}
+    .longWrite{width:93%}
+    .popUp .keCheng{left:34%}
+    .popUp .baoMing{left:1%}
+    .popUp .xueXi{left:67%}
+    .popUp .baokaoThings{left:1%}
+    .popUp .baokaoTime{left:34%}
+    .popUp .baokaoFee{left:67%}
+    .popUp_footer .assess{top:10%}
+    .popUp_footer input{width:33%;}
+    .xinxi form{left:4%}
+    a .assess{margin-bottom:-8px}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .header{height:100px;}
+    #headerdiv .logoBox{width: 25%; position: absolute; top:25%;left:2%;}
+    #headerdiv .logoBox img{ height:3rem; }
+    .logoBox2 {width:47%;position:absolute;left:28%;top:30%;}
+    .logoBox3{ width:28%;position: absolute;left:78%;top:29%;display: inline-block; }
+    .logoBox3 img{display: none;}
+    .logoBox3 div span{ font-size: 0.7rem}
+    .swiper-container img{width:100%;height:11rem;}
+    .secBox{position:absolute;left:20%;font-size:10%}
+    .secBox1 {width:5rem;height:14rem;top:8.5%;left:7%}
+    .textFirst { font-size:0.5px; padding-top: 0%;}
+    .sec_text p{font-size:1px;}
+    .secBox1 p{ margin-top:0.4rem }
+    .sec_text{top:21%;left:5%}
+    .secBox2{ width:5rem;height:32rem;position:absolute;left:7%;top:49.5%; }
+    .secBox2 p{margin-top:0.4rem}
+    .sec_text2{ top:0%;left:5%; }
+    .sec_text2 p{font-size:1px}
+    .secBox3{width:5rem;height:14rem;position:absolute;left:41.5%;top:8.5%}
+    .secBox3 p{margin-top:0.4rem}
+    .sec_text3{top:21%}
+    .sec_text3 p{font-size:1px}
+    .secBox4{width:5rem;height:32rem;position: absolute;left:41.5%;top:49.5%}
+    .sec_text4{top:0%}
+    .sec_text4 p{font-size:1px}
+    .secBox5 { width:5rem;height:32rem;left:72.5%;top:8.5% }
+    .secBox5 p{margin-top:0.4rem}
+    .sec_text5 p{font-size:1px}
+    .secBox6{ width:5rem;height:21rem;left:72.5%;top:49.5%}
+    .sec_text6 p{font-size:1px}
+    .sec_text a img{left:0.3rem;top:9rem;width:80%;height:1rem;}
+    .sec_text2 a img{left:0.2rem;top:8.6rem;width:80%;height:1rem;}
+    .sec_text3 a img {left: 0.3rem;top: 8.9rem;width: 80%;height:1rem;}
+    .sec_text4 a img {position: absolute;top: 8.6rem;width: 80%;height: 1rem;left:0.2rem}
+    .sec_text5{top:9.2%}
+    .sec_text5 a img {position: absolute;left: 0.1rem;top: 8.8rem;width: 80%;height: 1rem;}
+    .sec_text6 a img {position: absolute;left: 0.4rem;top: 8.7rem;width: 80%;height: 1rem;}
+    .sec_text6 {position: absolute;top: -1%;left: 5%;}
+    .section1{height:37rem;background-size:164% 100%}
+    .section2 .afpBox p{ text-align: center;font-size:1.5rem }
+    .section2 .afpBox .qjPic1 {position: absolute;left: 10%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic2 {position: absolute;left: 40%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic3 {position: absolute;left: 70%;top: 12%;width:25%;height:6%}
+    .whyAfp img {position: absolute;left: 57%;top: 26%;width:37%;height:33%}
+    .writeAfp p{position: absolute;left:11%;top:19%;width:45%;}
+    .section2{height:32rem}
+    .section3{width:100%;height:20rem;background-size:100% 100%}
+    .fir_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left: 11%;}
+    .sec_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;}
+    .thr_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left:7%}
+    .fir_img img{width:auto;height:36%;position: absolute;left:14%;top:4%}
+    .fir_img .miss{margin-top:2.3rem;font-size:14px}
+    .fir_img .cant{margin-top:0rem; font-size:0.1rem}
+    .sec_img img{width:auto;height:36%;position: absolute;left:18%;top:4%}
+    .sec_img .tmuch{margin-top:2.3rem;font-size:14px}
+    .sec_img .tprice{margin-top:0rem; font-size:0.1rem}
+    .thr_img img{width:auto;height:36%;position: absolute;left:22%;top:4%}
+    .thr_img .tried{margin-top:2.3rem;font-size:14px}
+    .thr_img .nper{margin-top:0rem; font-size:0.1rem}
+    .xiala1{position: absolute;left:-9.5%;top:60.5%;width: 16%;height:7%;font-size:72%}
+    .xiala2{position: absolute;left:31%;top:10%;width: 16%;height:7%;font-size:72%}
+    .xiala3{position: absolute;left:61%;top:10%;width:16%;height:7%;font-size:72%}
+    .xiala4{position: absolute;left:-9.5%;top:69%;width:16.5%;height:7%;font-size:72%}
+    .sr1{position: absolute;left:30.7%;top:61%;width:16%;height:7%;font-size:72%}
+    .sr2{position: absolute;left:60.7%;top:68.5%;width:16%;height:7%;font-size:72%}
+    .fangan{ width:9rem;height:1.6rem;top:83%;left:32.5%; }
+    .zdFangan{left:7%}
+    .bo1{ background-size: 100% 100%;width:14rem;height:16rem;left:6%;top:92%; }
+    .whatJr{font-size:1.1rem;}
+    .isJr{ font-size:0.8rem; }
+    .videos{ width:10rem;height:10rem;top:16rem;left:14rem}
+    .section4{ top:17rem;background-size:110% 53%; }
+    .anyWhere{ font-size:1.2rem;left:10%;top:2%;}
+    .whyC{ width:50%;height:40%;top:7%;left:54% }
+    .diTu{ height:29% }
+    .fourYears{ line-height:1.2rem }
+    .ceyice{left:17%;top:39%;width:70%;height:3%}
+    .shengFen{ width:4rem;height:1.5rem;position: absolute;top:-40%;left:-5%;}
+    .shiQu{width:4rem;height:1.5rem; position: absolute;top:-40%;left:17%;}
+    .inPut1{ width:5rem;height:1.4rem;position: absolute;top:44%;left:39% }
+    .inPut2{ width:5rem;height:1.4rem;position: absolute;top:44%;left:63% }
+    .result{ text-align: center;color:#fff;margin-top: 0.1rem; }
+    .resultDiv{top:49%;width:40%;height:3%;left:31%}
+    .section5{ top:0rem; width:100%;height: 39rem}
+    .sPlan{left:35%;top:0%;font-size:1.5rem;}
+    .sPlan1{width:48%;text-align: start;left:35%}
+    .s5Div{ top:15% }
+    .s5Div1{ top:15%;left:6% }
+    .s5Div2{ top:15%;left:6% }
+    .s5Firpic{width:30%;height:20%;margin-top:0%;margin-left:0%}
+    .s5Secpic{ width:30%;height:20%;margin-top:43%;margin-left:0% }
+    .s5Thrpic{ width:30%;height:20%;margin-top:86%;margin-left:0%  }
+    .s5Span1{ top:17%;left:3%;font-size:1rem }
+    .s5Span{top:53%;left:35%;font-size:1.5rem}
+    .s5Span1{ top:67%;left:34%;width:48% }
+    .span1{top:70%;left:35%;font-size:1.5rem}
+    .span2{top:77%;left:34.5%;font-size:1rem;width: 48%;text-align: start}
+    .section6{top:0rem;background-size:100% 90%}
+    .section6 h2{padding-top:2rem}
+    .selfList{width:16%;height:11rem;top:15%;left:3%;background-size:100% 100%}
+    .shouRu{font-size:1rem;text-align: center;left:7%;}
+    .shouRuImg{width:80%;height:11%;left:11.5%;top:37%}
+    .shouRuImg2{width:80%;height:11%;left:11.5%;top:59%}
+    .shouRu1{font-size:1rem;top:70%;text-align: center;left:5%}
+    .selfList1{ width:16%;height:11rem;top:-21.5%;left:22%;background-size:100% 100% }
+    .selfImg{left:41.5%;top:25%}
+    .gangWei{left:8%;top:11%;font-size:1rem;text-align: center}
+    .gangWeiImg{width:80%;height:11%;top:37%;left:11%}
+    .gangWei1{ font-size:1rem;text-align: center;left:7%;top:70%}
+    .gangWeiImg2{width:80%;height:11%;top:60%;left:11%}
+    .youCan{width:60%;height:61%;left:41%;top:40%}
+    .youCanImg{width:28%;height:61%;}
+    .selfList2{background-size:100% 100%;position: relative;width: 4rem;height: 11.4rem;top: -59.5%;left: 61%;}
+    .buTie{font-size:1rem;left:7%;top:12%;text-align: center}
+    .buTieImg{width:80%;height:11%;left:11%;top:38%}
+    .buTieImg2{width:80%;height:11%;left:11%;top:61%}
+    .buTie1{font-size:1rem;text-align: center;left:2.8%;top:72%}
+    .selfList3{background-size:100% 100%;position: relative;width:4rem;height:11.4rem;top: -97.5%;left:81%}
+    .touZi{font-size:1rem;position: absolute;left:7%;top:12%;text-align: center}
+    .touZiImg{position: absolute;left: 11.5%;top: 38%;width:80%;height:11%}
+    .touZiImg2{position: absolute;left: 12.5%;top: 61%;width:80%;height:11%}
+    .touZi1{font-size:1rem;left:3%;top:73%;text-align: center}
+    .section7{top:11rem;background-size:100% 50%}
+    .tDiao{width:21%;height:15%;left:4rem;top:-9rem}
+    .tKuang{width:55%;height:13%;left:8rem;top:-5rem}
+    .firstP1{font-size:1.4rem;position: absolute;left:11rem;top:-5rem}
+    .bDiao{width:4%;height:2%;left:16rem;top:-4.6rem}
+    .firstP2{font-size:10px;left:10rem;top:-2rem;width:11rem}
+    .tSong{left:25rem;top:6rem;width:21%;height:15%}
+    .sKuang{left:4rem;top:8.7rem;width:55%;height:9rem}
+    .secondP1{font-size:1.4rem;left:5rem;top:9rem;}
+    .sSong{left:9.5rem;top:9.2rem;width:4%;height:2%}
+    .secondP2{font-size:10px;left:5rem;top:11rem;width:11rem}
+    .tLiang{width:21%;height:15%;top:21rem;left:4rem}
+    .lKuang{left:8rem;top:22rem;width:55%;height:14%}
+    .thirdP1{font-size:1.4rem;left:9rem;top:22.3rem;}
+    .sLiang{left:13.5rem;top:22.5rem;width:4%;height:2%}
+    .thirdP2{font-size:10px;left:9rem;top:24rem;width:11rem}
+    .section8{top:-19rem}
+    .picButton img{left:34.5%;top:73%;width:32%;height:10%;z-index:0}
+    .picButton p{left:38%}
+    .hPic img{height:29%}
+    .dPic img{height:34%}
+    .nPic img{height:28%}
+    .footer{margin-top:-21%}
+    .xinxi{bottom:1px;height:165px;display: none}
+    .popUp{width:32%;left:5%;background-size:100% 60%}
+    .popUp .logoYun{top:38%;left:58%}
+    .popUp .middle_text{left:33%}
+    .popUp .logoYun{left:78%}
+    .popUp .middle_text2{left:33%}
+    .logoYun2{left:86%}
+    .longWrite{width:93%}
+    .popUp .keCheng{left:34%}
+    .popUp .baoMing{left:1%}
+    .popUp .xueXi{left:67%}
+    .popUp .baokaoThings{left:1%}
+    .popUp .baokaoTime{left:34%}
+    .popUp .baokaoFee{left:67%}
+    .popUp_footer .assess{top:10%}
+    .popUp_footer input{width:33%;}
+    .xinxi form{left:18%}
+    a .assess{margin-bottom:-8px}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:979px){
+    .header{height:100px;}
+    #headerdiv .logoBox{width: 25%; position: absolute; top:25%;left:2%;}
+    #headerdiv .logoBox img{ height:3rem; }
+    .logoBox2 {width:47%;position:absolute;left:28%;top:30%;}
+    .logoBox3{ width:28%;position: absolute;left:78%;top:29%;display: inline-block; }
+    .logoBox3 img{display: none;}
+    .logoBox3 div span{ font-size: 0.7rem}
+    .swiper-container img{width:100%;height:11rem;}
+    .secBox{position:absolute;left:20%;font-size:10%}
+    .secBox1 {width:5rem;height:14rem;top:8.5%;left:7%}
+    .textFirst { font-size:0.5px; padding-top: 0%;}
+    .sec_text p{font-size:1px;}
+    .secBox1 p{ margin-top:0.4rem }
+    .sec_text{top:21%;left:5%}
+    .secBox2{ width:5rem;height:32rem;position:absolute;left:7%;top:49.5%; }
+    .secBox2 p{margin-top:0.4rem}
+    .sec_text2{ top:0%;left:5%; }
+    .sec_text2 p{font-size:1px}
+    .secBox3{width:5rem;height:14rem;position:absolute;left:41.5%;top:8.5%}
+    .secBox3 p{margin-top:0.4rem}
+    .sec_text3{top:21%}
+    .sec_text3 p{font-size:1px}
+    .secBox4{width:5rem;height:32rem;position: absolute;left:41.5%;top:49.5%}
+    .sec_text4{top:0%}
+    .sec_text4 p{font-size:1px}
+    .secBox5 { width:5rem;height:32rem;left:72.5%;top:8.5% }
+    .secBox5 p{margin-top:0.4rem}
+    .sec_text5 p{font-size:1px}
+    .secBox6{ width:5rem;height:21rem;left:72.5%;top:49.5%}
+    .sec_text6 p{font-size:1px}
+    .sec_text a img{left:0.3rem;top:9rem;width:80%;height:1rem;}
+    .sec_text2 a img{left:0.2rem;top:8.6rem;width:80%;height:1rem;}
+    .sec_text3 a img {left: 0.3rem;top: 8.9rem;width: 80%;height:1rem;}
+    .sec_text4 a img {position: absolute;top: 8.6rem;width: 80%;height: 1rem;left:0.2rem}
+    .sec_text5{top:9.2%}
+    .sec_text5 a img {position: absolute;left: 0.1rem;top: 8.8rem;width: 80%;height: 1rem;}
+    .sec_text6 a img {position: absolute;left: 0.4rem;top: 8.7rem;width: 80%;height: 1rem;}
+    .sec_text6 {position: absolute;top: -1%;left: 5%;}
+    .section1{height:37rem;background-size:164% 100%}
+    .section2 .afpBox p{ text-align: center;font-size:1.5rem }
+    .section2 .afpBox .qjPic1 {position: absolute;left: 10%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic2 {position: absolute;left: 40%;top: 12%;width:25%;height:6%}
+    .section2 .afpBox .qjPic3 {position: absolute;left: 70%;top: 12%;width:25%;height:6%}
+    .whyAfp img {position: absolute;left: 57%;top: 26%;width:37%;height:33%}
+    .writeAfp p{position: absolute;left:11%;top:19%;width:45%;}
+    .section2{height:32rem}
+    .section3{width:100%;height:20rem;background-size:100% 100%}
+    .fir_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left: 11%;}
+    .sec_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;}
+    .thr_img {width: 4rem;height: 6rem;border: #d31414 solid 0.1rem;border-radius: 1rem;margin-left:7%}
+    .fir_img img{width:auto;height:36%;position: absolute;left:14%;top:4%}
+    .fir_img .miss{margin-top:2.3rem;font-size:14px}
+    .fir_img .cant{margin-top:0rem; font-size:0.1rem}
+    .sec_img img{width:auto;height:36%;position: absolute;left:18%;top:4%}
+    .sec_img .tmuch{margin-top:2.3rem;font-size:14px}
+    .sec_img .tprice{margin-top:0rem; font-size:0.1rem}
+    .thr_img img{width:auto;height:36%;position: absolute;left:22%;top:4%}
+    .thr_img .tried{margin-top:2.3rem;font-size:14px}
+    .thr_img .nper{margin-top:0rem; font-size:0.1rem}
+    .xiala1{position: absolute;left:-9.5%;top:60.5%;width: 16%;height:7%;font-size:72%}
+    .xiala2{position: absolute;left:31%;top:10%;width: 16%;height:7%;font-size:72%}
+    .xiala3{position: absolute;left:61%;top:10%;width:16%;height:7%;font-size:72%}
+    .xiala4{position: absolute;left:-9.5%;top:69%;width:16.5%;height:7%;font-size:72%}
+    .sr1{position: absolute;left:30.7%;top:61%;width:16%;height:7%;font-size:72%}
+    .sr2{position: absolute;left:60.7%;top:68.5%;width:16%;height:7%;font-size:72%}
+    .fangan{ width:9rem;height:1.6rem;top:83%;left:32.5%; }
+    .zdFangan{left:7%}
+    .bo1{ background-size: 100% 100%;width:14rem;height:16rem;left:18%;top:92%; }
+    .whatJr{font-size:1.1rem;}
+    .isJr{ font-size:0.8rem; }
+    .videos{ width:10rem;height:10rem;top:16rem;left:21rem}
+    .section4{ top:17rem;background-size:110% 53%; }
+    .anyWhere{ font-size:1.2rem;left:10%;top:2%;}
+    .whyC{ width:50%;height:40%;top:7%;left:54% }
+    .diTu{ height:29% }
+    .fourYears{ line-height:1.2rem }
+    .ceyice{left:17%;top:39%;width:70%;height:3%}
+    .shengFen{ width:4rem;height:1.5rem;position: absolute;top:-40%;left:-5%;}
+    .shiQu{width:4rem;height:1.5rem; position: absolute;top:-40%;left:17%;}
+    .inPut1{ width:5rem;height:1.4rem;position: absolute;top:43%;left:39% }
+    .inPut2{ width:5rem;height:1.4rem;position: absolute;top:43%;left:63% }
+    .result{ text-align: center;color:#fff;margin-top: 0.1rem; }
+    .resultDiv{top:49%;width:40%;height:3%;left:31%}
+    .section5{ top:0rem; width:100%;height: 39rem}
+    .sPlan{left:35%;top:0%;font-size:1.5rem;}
+    .sPlan1{width:48%;text-align: start;left:35%}
+    .s5Div{ top:15%;left:22% }
+    .s5Div1{ top:15%;left:22% }
+    .s5Div2{ top:15%;left:22% }
+    .s5Firpic{width:30%;height:20%;margin-top:0%;margin-left:0%}
+    .s5Secpic{ width:30%;height:20%;margin-top:43%;margin-left:0% }
+    .s5Thrpic{ width:30%;height:20%;margin-top:86%;margin-left:0%  }
+    .s5Span1{ top:17%;left:3%;font-size:1rem }
+    .s5Span{top:53%;left:35%;font-size:1.5rem}
+    .s5Span1{ top:67%;left:34%;width:48% }
+    .span1{top:70%;left:35%;font-size:1.5rem}
+    .span2{top:77%;left:34.5%;font-size:1rem;width: 48%;text-align: start}
+    .section6{top:0rem;background-size:100% 90%}
+    .section6 h2{padding-top:2rem}
+    .selfList{width:16%;height:11rem;top:15%;left:3%;background-size:100% 100%}
+    .shouRu{font-size:1rem;text-align: center;left:7%;}
+    .shouRuImg{width:80%;height:11%;left:11.5%;top:37%}
+    .shouRuImg2{width:80%;height:11%;left:11.5%;top:59%}
+    .shouRu1{font-size:1rem;top:70%;text-align: center;left:5%}
+    .selfList1{ width:16%;height:11rem;top:-21.5%;left:22%;background-size:100% 100% }
+    .selfImg{left:41.5%;top:25%}
+    .gangWei{left:8%;top:11%;font-size:1rem;text-align: center}
+    .gangWeiImg{width:80%;height:11%;top:37%;left:11%}
+    .gangWei1{ font-size:1rem;text-align: center;left:7%;top:70%}
+    .gangWeiImg2{width:80%;height:11%;top:60%;left:11%}
+    .youCan{width:60%;height:61%;left:41%;top:40%}
+    .youCanImg{width:28%;height:61%;}
+    .selfList2{background-size:100% 100%;position: relative;width: 7rem;height: 11.4rem;top: -59.5%;left: 61%;}
+    .buTie{font-size:1rem;left:7%;top:12%;text-align: center}
+    .buTieImg{width:80%;height:11%;left:11%;top:38%}
+    .buTieImg2{width:80%;height:11%;left:11%;top:61%}
+    .buTie1{font-size:1rem;text-align: center;left:2.8%;top:72%}
+    .selfList3{background-size:100% 100%;position: relative;width:7rem;height:11.4rem;top: -97.5%;left:81%}
+    .touZi{font-size:1rem;position: absolute;left:7%;top:12%;text-align: center}
+    .touZiImg{position: absolute;left: 11.5%;top: 38%;width:80%;height:11%}
+    .touZiImg2{position: absolute;left: 12.5%;top: 61%;width:80%;height:11%}
+    .touZi1{font-size:1rem;left:3%;top:73%;text-align: center}
+    .section7{top:11rem;background-size:100% 50%}
+    .tDiao{width:21%;height:15%;left:33rem;top:-9rem}
+    .tKuang{width:55%;height:13%;left:8rem;top:-5rem}
+    .firstP1{font-size:1.4rem;position: absolute;left:11rem;top:-5rem}
+    .bDiao{width:4%;height:2%;left:16rem;top:-4.6rem}
+    .firstP2{font-size:10px;left:10rem;top:-2rem;width:11rem}
+    .tSong{left:33rem;top:6rem;width:21%;height:15%}
+    .sKuang{left:8rem;top:8.7rem;width:55%;height:14%}
+    .secondP1{font-size:1.4rem;left:11rem;top:9rem;}
+    .sSong{left:15.5rem;top:9.2rem;width:4%;height:2%}
+    .secondP2{font-size:10px;left:11rem;top:11rem;width:11rem}
+    .tLiang{width:21%;height:15%;top:21.5rem;left:32rem}
+    .lKuang{left:8rem;top:22rem;width:55%;height:14%}
+    .thirdP1{font-size:1.4rem;left:9rem;top:22.3rem;}
+    .sLiang{left:13.5rem;top:22.5rem;width:4%;height:2%}
+    .thirdP2{font-size:10px;left:9rem;top:24rem;width:11rem}
+    .section8{top:-19rem}
+    .picButton img{left:34.5%;top:73%;width:32%;height:10%;z-index:0}
+    .picButton p{left:44%}
+    .hPic img{height:29%}
+    .dPic img{height:34%}
+    .nPic img{height:28%}
+    .footer{margin-top:-21%}
+    .xinxi{bottom:1px;height:165px;display: none}
+    .popUp{width:60%;left:19%;background-size:100% 60%}
+    .popUp .logoYun{top:38%;left:58%}
+    .popUp .middle_text{left:33%}
+    .popUp .logoYun{left:78%}
+    .popUp .middle_text2{left:33%}
+    .logoYun2{left:86%}
+    .longWrite{width:93%}
+    .popUp .keCheng{left:34%}
+    .popUp .baoMing{left:1%}
+    .popUp .xueXi{left:67%}
+    .popUp .baokaoThings{left:1%}
+    .popUp .baokaoTime{left:34%}
+    .popUp .baokaoFee{left:67%}
+    .popUp_footer .assess{top:10%}
+    .popUp_footer input{width:33%;}
+    .xinxi form{left:18%}
+    a .assess{margin-bottom:-8px}
+}
+
+@media screen and (min-width:980px) and (max-width:1024px){
+    .swiper-container img{width:100%;height:20rem;}
+    .section2 .afpBox .qjPic1 {position: absolute;left: 21%;top: 10%;}
+    .section2 .afpBox .qjPic3{left:68%}
+}

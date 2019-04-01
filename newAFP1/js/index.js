@@ -1,0 +1,11 @@
+$("document").ready(function(){
+	setTimeout(function(){
+		$(".popUp").show();
+	},2000);
+	$(".close1").click(function(){
+		$(".popUp").hide();
+		setTimeout(function(){
+			$(".popUp").show();
+		},30000);
+	});
+});
