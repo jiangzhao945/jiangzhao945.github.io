@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{padding: 0px;margin: 0px;}
+        .boxParent{width: 100%;height: 100vh;background: #ccc;}
+        .box1{width: 300px;height: 300px;background: #eee;margin: 0 auto;
+            /* border-image: linear-gradient(#F80, #2ED) 20 20; */
+            background: -webkit-linear-gradient(0deg, rgb(237, 240, 60), rgba(51, 182, 235, 0.822));
+            border-radius: 50%;position: relative;}
+
+            .box2{position: absolute;width: 292px;height: 292px;background: #fff;border-radius: 50%;
+            left: 4px;top: 4px;text-align: center;}
+            h1{margin-top:80px;}
+            .hr{width: 160px;height: 2px;background: #ccc;margin: 20px 0 0 66px;}
+            .clockBox>span{font-size: 28px;color: red;}
+    </style>
+</head>
+<body>
+    <div class="boxParent">
+        <div class="box1">
+            <div class="box2">
+                <h1>揭晓倒计时</h1>
+                <div class="hr"></div>
+                <div class="clockBox">
+                    <span id="d">00:</span>
+                    <span id="h">00:</span>
+                    <span id="m">00:</span>
+                    <span id="s">00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function countTime(){
+            //获得当前时间
+            var date=new Date();
+            var now=date.getTime();
+
+            //设置截止时间
+            var str='2020/2/22 00:00:00';
+            var endDate=new Date(str);
+            var end=endDate.getTime();
+
+            //时间差
+            var time=end-now;
+            var d,h,m,s;
+            if(time>=0){
+                d = Math.floor(time/1000/60/60/24);  
+                h = Math.floor(time/1000/60/60%24);  
+                m = Math.floor(time/1000/60%60);  
+                s = Math.floor(time/1000%60); 
+            }
+            var dd=document.getElementById("d");
+            var hh=document.getElementById("h");  
+            var mm=document.getElementById("m");  
+            var ss=document.getElementById("s"); 
+            if(d<10&&d>0){
+                dd.innerHTML='0'+d+':'
+            }else{dd.innerHTML= d+':';}
+
+            if(h<10&&h>0){
+                hh.innerHTML = '0'+h+":";
+            }else{hh.innerHTML=h+':';}
+
+            if(m<10&&m>0){
+                mm.innerHTML ='0'+m+":"
+            }else{mm.innerHTML=m+':'}
+
+            if(s<10&&s>0){
+                ss.innerHTML ='0'+s;
+            }else{ss.innerHTML=s}
+        } 
+        setInterval(countTime,1000)
+    </script>
+</body>
+</html>
